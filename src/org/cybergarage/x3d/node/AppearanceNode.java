@@ -11,6 +11,9 @@
 *	12/01/02
 *		- Added the follwing new X3D fields.
 *			lineProperties,  fillProperties
+*	12/05/03
+*		- shen shenyang@163.net <shenyang@163.net>
+*		- Fixed a output bugs using getType() instead of getTypeString().
 *
 ******************************************************************/
 
@@ -174,9 +177,9 @@ public class AppearanceNode extends Node
 			if (texture.isInstanceNode() == false) {
 				String nodeName = texture.getName();
 				if (nodeName != null && 0 < nodeName.length())
-					printStream.println(indentString + "\t" + "texture DEF " + texture.getName() + " " + texture.getType() + " {");
+					printStream.println(indentString + "\t" + "texture DEF " + texture.getName() + " " + texture.getTypeString() + " {");
 				else
-					printStream.println(indentString + "\t" + "texture " + texture.getType() + " {");
+					printStream.println(indentString + "\t" + "texture " + texture.getTypeString() + " {");
 				texture.outputContext(printStream, indentString + "\t");
 				printStream.println(indentString + "\t" + "}");
 			}

@@ -342,6 +342,7 @@ public class SceneGraph extends Scene implements Constants, Runnable {
 		}
 		finally {
 			if (getOption(USE_PREPROCESSOR)) {
+				/*
 				if (prepro != null) {
 					try {
 						prepro.delete();
@@ -351,6 +352,7 @@ public class SceneGraph extends Scene implements Constants, Runnable {
 						System.out.println(ioe.getMessage());
 					}
 				}
+				*/
 			}
 		}
 		

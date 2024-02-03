@@ -1,3 +1,20 @@
+/******************************************************************
+*
+*	CyberVRML97 for Java
+*
+*	Copyright (C) Satoshi Konno 1997-1998
+*
+*	File : VRML97Parser.jack
+*
+*	Revision;
+*
+*	12/11/03
+*		- Thuan Truong <tqthuan@tma.com.vn>
+*		- Fixed AddChildren/RemoveChildren to read H-Anim files.
+*		- Added AddChldren/RemoveChildren to TransformNode().
+*
+******************************************************************/
+
 options {
   STATIC = false;
   LOOKAHEAD = 1;
@@ -706,7 +723,7 @@ Node Use() :
 	<USE>
 		{
 			String nodeName = getNextToken().image;
-			Node defNode = findNodeByName(nodeName);
+			Node defNode = findNode(nodeName);
 
 			Node instanceNode = null;
 			if (defNode != null) {
@@ -911,13 +928,15 @@ TOKEN :
 void AddChildren() :
 {}
 {
-	<addChildren> MFNode()
+//	<addChildren> MFNode()
+	<addChildren> ("[")* ((Def())* (ChildrenElement()))* ("]")*
 }
 
 void RemoveChildren() :
 {}
 {
-	<removeChildren> MFNode()
+//	<removeChildren> MFNode()
+	<removeChildren> ("[")* ((Def())* (ChildrenElement()))* ("]")*
 }
 
 ///////////////////////////////////////////////
@@ -4591,6 +4610,8 @@ void TransformElement() :
 			((TransformNode)getCurrentNode()).setBoundingBoxSize(vec);
 		}
 |	Children()
+|	AddChildren()
+|	RemoveChildren()
 }
 
 void TransformID() :

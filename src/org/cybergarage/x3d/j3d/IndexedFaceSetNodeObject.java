@@ -6,6 +6,12 @@
 *
 *	File : IndexedFaseSetNodeObject.java
 *
+*	Revision;
+*
+*	12/11/03
+*		- Thuan Truong <tqthuan@tma.com.vn>
+*		- Fixed initialize() to set correct TextureCoordinates.
+*
 ******************************************************************/
 
 package org.cybergarage.x3d.j3d;
@@ -323,8 +329,11 @@ public class IndexedFaceSetNodeObject extends IndexedTriangleArray implements No
 				if (id == -1 || n == (nTexCoordIndices-1)) {
 					int indexSize = index.getSize();
 					for (int i=0; i<(indexSize-2); i++) {
-						setTextureCoordinateIndex(nTriangle*2,		index.get1Value(0));
-						setTextureCoordinateIndex(nTriangle*2+1,	index.get1Value(i+1));
+						//setTextureCoordinateIndex(nTriangle*2,		index.get1Value(0));
+						//setTextureCoordinateIndex(nTriangle*2+1,	index.get1Value(i+1));
+						setTextureCoordinateIndex(nTriangle*3,		index.get1Value(0));
+						setTextureCoordinateIndex(nTriangle*3+1,	index.get1Value(i+1));
+						setTextureCoordinateIndex(nTriangle*3+2,	index.get1Value(i+2));
 						nTriangle++;
 					}	
 					index.clear();

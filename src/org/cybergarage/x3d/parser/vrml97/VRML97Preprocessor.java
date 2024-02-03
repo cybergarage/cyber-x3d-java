@@ -74,16 +74,16 @@ public class VRML97Preprocessor {
 	//	Utility 
 	////////////////////////////////////////////////
 
-	private DecimalFormat number2StringDecimalFormat = new DecimalFormat("#############################0.0#############################");
+	private final static DecimalFormat number2StringDecimalFormat = new DecimalFormat("#############################0.0#############################");
 
-	public boolean isIntegerValue(double value) 
+	private final static boolean isIntegerValue(double value) 
 	{
 		if ((value % 1.0) == 0.0)
 			return true;
 		return false;
 	}
 	
-	public String number2String(double value) 
+	public final static String number2String(double value) 
 	{
 		String str = null;
 		if (isIntegerValue(value) == true) {
@@ -201,7 +201,7 @@ public class VRML97Preprocessor {
 			return null;
 		}
 		else if (fieldName.compareTo("SFInt32") == 0) {
-			stream.nextToken();	Integer value = new Integer((int)stream.nval);
+			stream.nextToken();Integer value = new Integer((int)stream.nval);
 			return value.toString();
 		}
 		else if (fieldName.compareTo("SFString") == 0) {
@@ -410,7 +410,9 @@ public class VRML97Preprocessor {
 		while (stream.ttype != StreamTokenizer.TT_EOF && 0 < nest) {
 			switch (stream.ttype) {
 			case StreamTokenizer.TT_NUMBER:
-				proto.addToken(stream.nval);
+				double dvalue = stream.nval; 
+				String valStr = number2String(dvalue);
+				proto.addToken(valStr);
 				break;
 			case StreamTokenizer.TT_WORD:
 				if (stream.sval.compareTo("{") == 0) 
@@ -488,8 +490,8 @@ public class VRML97Preprocessor {
 							String fieldTypeName = protoParam.getType();
 							String value = getParameterValue(fieldTypeName, stream);
 							if (hasProto(proto, value) == true) {
-								//Debug.message("==== value ==== ");
-								//Debug.message(value);
+								Debug.message("==== value ==== ");
+								Debug.message(value);
 								StringWriter strWriter = new StringWriter();  
 								PrintWriter printWriter = new PrintWriter(strWriter);
 								StringReader strReader = new StringReader(value);
@@ -501,8 +503,8 @@ public class VRML97Preprocessor {
 								}
 								catch (IOException e) {}
 								value = strWriter.toString();
-								//Debug.message("==== New value ==== ");
-								//Debug.message(value);
+								Debug.message("==== New value ==== ");
+								Debug.message(value);
 							}
 							paramList.addParameter(fieldTypeName, name, value);
 						}
@@ -579,6 +581,7 @@ public class VRML97Preprocessor {
 						if (proto != null) {
 							String protoString = getVRML97ProtoString(proto, stream);
 							if (protoString != null) {
+								Debug.message(protoString);
 								printStream.println(protoString);
 							}
 						}

@@ -1431,12 +1431,176 @@ public class VRML97Parser extends Parser implements VRML97ParserType, VRML97Pars
 
   final public void AddChildren() throws ParseException {
     jj_consume_token(addChildren);
-    MFNode();
+    label_25:
+    while (true) {
+      switch ((jj_ntk==-1)?jj_ntk():jj_ntk) {
+      case 13:
+        ;
+        break;
+      default:
+        jj_la1[45] = jj_gen;
+        break label_25;
+      }
+      jj_consume_token(13);
+    }
+    label_26:
+    while (true) {
+      switch ((jj_ntk==-1)?jj_ntk():jj_ntk) {
+      case NULL:
+      case DEF:
+      case USE:
+      case Anchor:
+      case AudioClip:
+      case Background:
+      case Billboard:
+      case Collision:
+      case ColorInterpolator:
+      case CoordinateInterpolator:
+      case CylinderSensor:
+      case DirectionalLight:
+      case Fog:
+      case Group:
+      case Inline:
+      case LOD:
+      case NavigationInfo:
+      case NormalInterpolator:
+      case OrientationInterpolator:
+      case PlaneSensor:
+      case PointLight:
+      case PositionInterpolator:
+      case ProximitySensor:
+      case ScalarInterpolator:
+      case Script:
+      case Sound:
+      case SphereSensor:
+      case SpotLight:
+      case Shape:
+      case Switch:
+      case TimeSensor:
+      case TouchSensor:
+      case Transform:
+      case Viewpoint:
+      case VisibilitySensor:
+      case WorldInfo:
+        ;
+        break;
+      default:
+        jj_la1[46] = jj_gen;
+        break label_26;
+      }
+      label_27:
+      while (true) {
+        switch ((jj_ntk==-1)?jj_ntk():jj_ntk) {
+        case DEF:
+          ;
+          break;
+        default:
+          jj_la1[47] = jj_gen;
+          break label_27;
+        }
+        Def();
+      }
+      ChildrenElement();
+    }
+    label_28:
+    while (true) {
+      switch ((jj_ntk==-1)?jj_ntk():jj_ntk) {
+      case 14:
+        ;
+        break;
+      default:
+        jj_la1[48] = jj_gen;
+        break label_28;
+      }
+      jj_consume_token(14);
+    }
   }
 
   final public void RemoveChildren() throws ParseException {
     jj_consume_token(removeChildren);
-    MFNode();
+    label_29:
+    while (true) {
+      switch ((jj_ntk==-1)?jj_ntk():jj_ntk) {
+      case 13:
+        ;
+        break;
+      default:
+        jj_la1[49] = jj_gen;
+        break label_29;
+      }
+      jj_consume_token(13);
+    }
+    label_30:
+    while (true) {
+      switch ((jj_ntk==-1)?jj_ntk():jj_ntk) {
+      case NULL:
+      case DEF:
+      case USE:
+      case Anchor:
+      case AudioClip:
+      case Background:
+      case Billboard:
+      case Collision:
+      case ColorInterpolator:
+      case CoordinateInterpolator:
+      case CylinderSensor:
+      case DirectionalLight:
+      case Fog:
+      case Group:
+      case Inline:
+      case LOD:
+      case NavigationInfo:
+      case NormalInterpolator:
+      case OrientationInterpolator:
+      case PlaneSensor:
+      case PointLight:
+      case PositionInterpolator:
+      case ProximitySensor:
+      case ScalarInterpolator:
+      case Script:
+      case Sound:
+      case SphereSensor:
+      case SpotLight:
+      case Shape:
+      case Switch:
+      case TimeSensor:
+      case TouchSensor:
+      case Transform:
+      case Viewpoint:
+      case VisibilitySensor:
+      case WorldInfo:
+        ;
+        break;
+      default:
+        jj_la1[50] = jj_gen;
+        break label_30;
+      }
+      label_31:
+      while (true) {
+        switch ((jj_ntk==-1)?jj_ntk():jj_ntk) {
+        case DEF:
+          ;
+          break;
+        default:
+          jj_la1[51] = jj_gen;
+          break label_31;
+        }
+        Def();
+      }
+      ChildrenElement();
+    }
+    label_32:
+    while (true) {
+      switch ((jj_ntk==-1)?jj_ntk():jj_ntk) {
+      case 14:
+        ;
+        break;
+      default:
+        jj_la1[52] = jj_gen;
+        break label_32;
+      }
+      jj_consume_token(14);
+    }
   }
 
   final public void AnchorURLID() throws ParseException {
@@ -1482,7 +1646,7 @@ public class VRML97Parser extends Parser implements VRML97ParserType, VRML97Pars
       Children();
       break;
     default:
-      jj_la1[45] = jj_gen;
+      jj_la1[53] = jj_gen;
       jj_consume_token(-1);
       throw new ParseException();
     }
@@ -1499,7 +1663,7 @@ public class VRML97Parser extends Parser implements VRML97ParserType, VRML97Pars
   final public void Anchor() throws ParseException {
     AnchorID();
     NodeBegin();
-    label_25:
+    label_33:
     while (true) {
       switch ((jj_ntk==-1)?jj_ntk():jj_ntk) {
       case children:
@@ -1511,8 +1675,8 @@ public class VRML97Parser extends Parser implements VRML97ParserType, VRML97Pars
         ;
         break;
       default:
-        jj_la1[46] = jj_gen;
-        break label_25;
+        jj_la1[54] = jj_gen;
+        break label_33;
       }
       AnchorElement();
     }
@@ -1528,15 +1692,15 @@ public class VRML97Parser extends Parser implements VRML97ParserType, VRML97Pars
       switch ((jj_ntk==-1)?jj_ntk():jj_ntk) {
       case DEF:
       case Material:
-        label_26:
+        label_34:
         while (true) {
           switch ((jj_ntk==-1)?jj_ntk():jj_ntk) {
           case DEF:
             ;
             break;
           default:
-            jj_la1[47] = jj_gen;
-            break label_26;
+            jj_la1[55] = jj_gen;
+            break label_34;
           }
           Def();
         }
@@ -1549,7 +1713,7 @@ public class VRML97Parser extends Parser implements VRML97ParserType, VRML97Pars
         jj_consume_token(NULL);
         break;
       default:
-        jj_la1[48] = jj_gen;
+        jj_la1[56] = jj_gen;
         jj_consume_token(-1);
         throw new ParseException();
       }
@@ -1559,15 +1723,15 @@ public class VRML97Parser extends Parser implements VRML97ParserType, VRML97Pars
       switch ((jj_ntk==-1)?jj_ntk():jj_ntk) {
       case DEF:
       case TextureTransform:
-        label_27:
+        label_35:
         while (true) {
           switch ((jj_ntk==-1)?jj_ntk():jj_ntk) {
           case DEF:
             ;
             break;
           default:
-            jj_la1[49] = jj_gen;
-            break label_27;
+            jj_la1[57] = jj_gen;
+            break label_35;
           }
           Def();
         }
@@ -1580,7 +1744,7 @@ public class VRML97Parser extends Parser implements VRML97ParserType, VRML97Pars
         jj_consume_token(NULL);
         break;
       default:
-        jj_la1[50] = jj_gen;
+        jj_la1[58] = jj_gen;
         jj_consume_token(-1);
         throw new ParseException();
       }
@@ -1592,15 +1756,15 @@ public class VRML97Parser extends Parser implements VRML97ParserType, VRML97Pars
       case ImageTexture:
       case MovieTexture:
       case PixelTexture:
-        label_28:
+        label_36:
         while (true) {
           switch ((jj_ntk==-1)?jj_ntk():jj_ntk) {
           case DEF:
             ;
             break;
           default:
-            jj_la1[51] = jj_gen;
-            break label_28;
+            jj_la1[59] = jj_gen;
+            break label_36;
           }
           Def();
         }
@@ -1615,7 +1779,7 @@ public class VRML97Parser extends Parser implements VRML97ParserType, VRML97Pars
           PixelTexture();
           break;
         default:
-          jj_la1[52] = jj_gen;
+          jj_la1[60] = jj_gen;
           jj_consume_token(-1);
           throw new ParseException();
         }
@@ -1624,13 +1788,13 @@ public class VRML97Parser extends Parser implements VRML97ParserType, VRML97Pars
         jj_consume_token(NULL);
         break;
       default:
-        jj_la1[53] = jj_gen;
+        jj_la1[61] = jj_gen;
         jj_consume_token(-1);
         throw new ParseException();
       }
       break;
     default:
-      jj_la1[54] = jj_gen;
+      jj_la1[62] = jj_gen;
       jj_consume_token(-1);
       throw new ParseException();
     }
@@ -1647,7 +1811,7 @@ public class VRML97Parser extends Parser implements VRML97ParserType, VRML97Pars
   final public void Appearance() throws ParseException {
     AppearanceID();
     NodeBegin();
-    label_29:
+    label_37:
     while (true) {
       switch ((jj_ntk==-1)?jj_ntk():jj_ntk) {
       case material:
@@ -1656,8 +1820,8 @@ public class VRML97Parser extends Parser implements VRML97ParserType, VRML97Pars
         ;
         break;
       default:
-        jj_la1[55] = jj_gen;
-        break label_29;
+        jj_la1[63] = jj_gen;
+        break label_37;
       }
       AppearanceElement();
     }
@@ -1708,7 +1872,7 @@ public class VRML97Parser extends Parser implements VRML97ParserType, VRML97Pars
                         ((AudioClipNode)getCurrentNode()).setStopTime(dvalue);
       break;
     default:
-      jj_la1[56] = jj_gen;
+      jj_la1[64] = jj_gen;
       jj_consume_token(-1);
       throw new ParseException();
     }
@@ -1725,7 +1889,7 @@ public class VRML97Parser extends Parser implements VRML97ParserType, VRML97Pars
   final public void AudioClip() throws ParseException {
     AudioClipID();
     NodeBegin();
-    label_30:
+    label_38:
     while (true) {
       switch ((jj_ntk==-1)?jj_ntk():jj_ntk) {
       case url:
@@ -1737,8 +1901,8 @@ public class VRML97Parser extends Parser implements VRML97ParserType, VRML97Pars
         ;
         break;
       default:
-        jj_la1[57] = jj_gen;
-        break label_30;
+        jj_la1[65] = jj_gen;
+        break label_38;
       }
       AudioClipElement();
     }
@@ -1852,7 +2016,7 @@ public class VRML97Parser extends Parser implements VRML97ParserType, VRML97Pars
                         popNode();
       break;
     default:
-      jj_la1[58] = jj_gen;
+      jj_la1[66] = jj_gen;
       jj_consume_token(-1);
       throw new ParseException();
     }
@@ -1869,7 +2033,7 @@ public class VRML97Parser extends Parser implements VRML97ParserType, VRML97Pars
   final public void Background() throws ParseException {
     BackgroundID();
     NodeBegin();
-    label_31:
+    label_39:
     while (true) {
       switch ((jj_ntk==-1)?jj_ntk():jj_ntk) {
       case backURL:
@@ -1885,8 +2049,8 @@ public class VRML97Parser extends Parser implements VRML97ParserType, VRML97Pars
         ;
         break;
       default:
-        jj_la1[59] = jj_gen;
-        break label_31;
+        jj_la1[67] = jj_gen;
+        break label_39;
       }
       BackgroundElement();
     }
@@ -1918,7 +2082,7 @@ public class VRML97Parser extends Parser implements VRML97ParserType, VRML97Pars
       Children();
       break;
     default:
-      jj_la1[60] = jj_gen;
+      jj_la1[68] = jj_gen;
       jj_consume_token(-1);
       throw new ParseException();
     }
@@ -1935,7 +2099,7 @@ public class VRML97Parser extends Parser implements VRML97ParserType, VRML97Pars
   final public void Billboard() throws ParseException {
     BillboardID();
     NodeBegin();
-    label_32:
+    label_40:
     while (true) {
       switch ((jj_ntk==-1)?jj_ntk():jj_ntk) {
       case children:
@@ -1945,8 +2109,8 @@ public class VRML97Parser extends Parser implements VRML97ParserType, VRML97Pars
         ;
         break;
       default:
-        jj_la1[61] = jj_gen;
-        break label_32;
+        jj_la1[69] = jj_gen;
+        break label_40;
       }
       BillboardElement();
     }
@@ -1973,15 +2137,15 @@ public class VRML97Parser extends Parser implements VRML97ParserType, VRML97Pars
   final public void Box() throws ParseException {
     BoxID();
     NodeBegin();
-    label_33:
+    label_41:
     while (true) {
       switch ((jj_ntk==-1)?jj_ntk():jj_ntk) {
       case size:
         ;
         break;
       default:
-        jj_la1[62] = jj_gen;
-        break label_33;
+        jj_la1[70] = jj_gen;
+        break label_41;
       }
       BoxElement();
     }
@@ -2055,13 +2219,13 @@ public class VRML97Parser extends Parser implements VRML97ParserType, VRML97Pars
         jj_consume_token(NULL);
         break;
       default:
-        jj_la1[63] = jj_gen;
+        jj_la1[71] = jj_gen;
         jj_consume_token(-1);
         throw new ParseException();
       }
       break;
     default:
-      jj_la1[64] = jj_gen;
+      jj_la1[72] = jj_gen;
       jj_consume_token(-1);
       throw new ParseException();
     }
@@ -2078,7 +2242,7 @@ public class VRML97Parser extends Parser implements VRML97ParserType, VRML97Pars
   final public void Collision() throws ParseException {
     CollisionID();
     NodeBegin();
-    label_34:
+    label_42:
     while (true) {
       switch ((jj_ntk==-1)?jj_ntk():jj_ntk) {
       case children:
@@ -2089,8 +2253,8 @@ public class VRML97Parser extends Parser implements VRML97ParserType, VRML97Pars
         ;
         break;
       default:
-        jj_la1[65] = jj_gen;
-        break label_34;
+        jj_la1[73] = jj_gen;
+        break label_42;
       }
       CollisionElement();
     }
@@ -2151,7 +2315,7 @@ public class VRML97Parser extends Parser implements VRML97ParserType, VRML97Pars
                         popNode();
       break;
     default:
-      jj_la1[66] = jj_gen;
+      jj_la1[74] = jj_gen;
       jj_consume_token(-1);
       throw new ParseException();
     }
@@ -2160,7 +2324,7 @@ public class VRML97Parser extends Parser implements VRML97ParserType, VRML97Pars
   final public void ColorInterpolator() throws ParseException {
     ColorInterpolatorID();
     NodeBegin();
-    label_35:
+    label_43:
     while (true) {
       switch ((jj_ntk==-1)?jj_ntk():jj_ntk) {
       case key:
@@ -2168,8 +2332,8 @@ public class VRML97Parser extends Parser implements VRML97ParserType, VRML97Pars
         ;
         break;
       default:
-        jj_la1[67] = jj_gen;
-        break label_35;
+        jj_la1[75] = jj_gen;
+        break label_43;
       }
       ColorInterpolatorElement();
     }
@@ -2203,7 +2367,7 @@ public class VRML97Parser extends Parser implements VRML97ParserType, VRML97Pars
                         ((ConeNode)getCurrentNode()).setBottomRadius(fvalue);
       break;
     default:
-      jj_la1[68] = jj_gen;
+      jj_la1[76] = jj_gen;
       jj_consume_token(-1);
       throw new ParseException();
     }
@@ -2220,7 +2384,7 @@ public class VRML97Parser extends Parser implements VRML97ParserType, VRML97Pars
   final public void Cone() throws ParseException {
     ConeID();
     NodeBegin();
-    label_36:
+    label_44:
     while (true) {
       switch ((jj_ntk==-1)?jj_ntk():jj_ntk) {
       case height:
@@ -2230,8 +2394,8 @@ public class VRML97Parser extends Parser implements VRML97ParserType, VRML97Pars
         ;
         break;
       default:
-        jj_la1[69] = jj_gen;
-        break label_36;
+        jj_la1[77] = jj_gen;
+        break label_44;
       }
       ConeElement();
     }
@@ -2292,7 +2456,7 @@ public class VRML97Parser extends Parser implements VRML97ParserType, VRML97Pars
                         popNode();
       break;
     default:
-      jj_la1[70] = jj_gen;
+      jj_la1[78] = jj_gen;
       jj_consume_token(-1);
       throw new ParseException();
     }
@@ -2301,7 +2465,7 @@ public class VRML97Parser extends Parser implements VRML97ParserType, VRML97Pars
   final public void CoordinateInterpolator() throws ParseException {
     CoordinateInterpolatorID();
     NodeBegin();
-    label_37:
+    label_45:
     while (true) {
       switch ((jj_ntk==-1)?jj_ntk():jj_ntk) {
       case key:
@@ -2309,8 +2473,8 @@ public class VRML97Parser extends Parser implements VRML97ParserType, VRML97Pars
         ;
         break;
       default:
-        jj_la1[71] = jj_gen;
-        break label_37;
+        jj_la1[79] = jj_gen;
+        break label_45;
       }
       CoordinateInterpolatorElement();
     }
@@ -2349,7 +2513,7 @@ public class VRML97Parser extends Parser implements VRML97ParserType, VRML97Pars
                         ((CylinderNode)getCurrentNode()).setRadius(fvalue);
       break;
     default:
-      jj_la1[72] = jj_gen;
+      jj_la1[80] = jj_gen;
       jj_consume_token(-1);
       throw new ParseException();
     }
@@ -2366,7 +2530,7 @@ public class VRML97Parser extends Parser implements VRML97ParserType, VRML97Pars
   final public void Cylinder() throws ParseException {
     CylinderID();
     NodeBegin();
-    label_38:
+    label_46:
     while (true) {
       switch ((jj_ntk==-1)?jj_ntk():jj_ntk) {
       case height:
@@ -2377,8 +2541,8 @@ public class VRML97Parser extends Parser implements VRML97ParserType, VRML97Pars
         ;
         break;
       default:
-        jj_la1[73] = jj_gen;
-        break label_38;
+        jj_la1[81] = jj_gen;
+        break label_46;
       }
       CylinderElement();
     }
@@ -2422,7 +2586,7 @@ public class VRML97Parser extends Parser implements VRML97ParserType, VRML97Pars
                         ((CylinderSensorNode)getCurrentNode()).setAutoOffset(bvalue);
       break;
     default:
-      jj_la1[74] = jj_gen;
+      jj_la1[82] = jj_gen;
       jj_consume_token(-1);
       throw new ParseException();
     }
@@ -2439,7 +2603,7 @@ public class VRML97Parser extends Parser implements VRML97ParserType, VRML97Pars
   final public void CylinderSensor() throws ParseException {
     CylinderSensorID();
     NodeBegin();
-    label_39:
+    label_47:
     while (true) {
       switch ((jj_ntk==-1)?jj_ntk():jj_ntk) {
       case minAngle:
@@ -2451,8 +2615,8 @@ public class VRML97Parser extends Parser implements VRML97ParserType, VRML97Pars
         ;
         break;
       default:
-        jj_la1[75] = jj_gen;
-        break label_39;
+        jj_la1[83] = jj_gen;
+        break label_47;
       }
       CylinderSensorElement();
     }
@@ -2492,7 +2656,7 @@ public class VRML97Parser extends Parser implements VRML97ParserType, VRML97Pars
                         ((DirectionalLightNode)getCurrentNode()).setDirection(value3f);
       break;
     default:
-      jj_la1[76] = jj_gen;
+      jj_la1[84] = jj_gen;
       jj_consume_token(-1);
       throw new ParseException();
     }
@@ -2509,7 +2673,7 @@ public class VRML97Parser extends Parser implements VRML97ParserType, VRML97Pars
   final public void DirectionalLight() throws ParseException {
     DirectionalLightID();
     NodeBegin();
-    label_40:
+    label_48:
     while (true) {
       switch ((jj_ntk==-1)?jj_ntk():jj_ntk) {
       case color:
@@ -2520,8 +2684,8 @@ public class VRML97Parser extends Parser implements VRML97ParserType, VRML97Pars
         ;
         break;
       default:
-        jj_la1[77] = jj_gen;
-        break label_40;
+        jj_la1[85] = jj_gen;
+        break label_48;
       }
       DirectionalLightElement();
     }
@@ -2596,15 +2760,15 @@ public class VRML97Parser extends Parser implements VRML97ParserType, VRML97Pars
       switch ((jj_ntk==-1)?jj_ntk():jj_ntk) {
       case DEF:
       case Normal:
-        label_41:
+        label_49:
         while (true) {
           switch ((jj_ntk==-1)?jj_ntk():jj_ntk) {
           case DEF:
             ;
             break;
           default:
-            jj_la1[78] = jj_gen;
-            break label_41;
+            jj_la1[86] = jj_gen;
+            break label_49;
           }
           Def();
         }
@@ -2617,7 +2781,7 @@ public class VRML97Parser extends Parser implements VRML97ParserType, VRML97Pars
         jj_consume_token(NULL);
         break;
       default:
-        jj_la1[79] = jj_gen;
+        jj_la1[87] = jj_gen;
         jj_consume_token(-1);
         throw new ParseException();
       }
@@ -2627,15 +2791,15 @@ public class VRML97Parser extends Parser implements VRML97ParserType, VRML97Pars
       switch ((jj_ntk==-1)?jj_ntk():jj_ntk) {
       case DEF:
       case Color:
-        label_42:
+        label_50:
         while (true) {
           switch ((jj_ntk==-1)?jj_ntk():jj_ntk) {
           case DEF:
             ;
             break;
           default:
-            jj_la1[80] = jj_gen;
-            break label_42;
+            jj_la1[88] = jj_gen;
+            break label_50;
           }
           Def();
         }
@@ -2648,7 +2812,7 @@ public class VRML97Parser extends Parser implements VRML97ParserType, VRML97Pars
         jj_consume_token(NULL);
         break;
       default:
-        jj_la1[81] = jj_gen;
+        jj_la1[89] = jj_gen;
         jj_consume_token(-1);
         throw new ParseException();
       }
@@ -2658,15 +2822,15 @@ public class VRML97Parser extends Parser implements VRML97ParserType, VRML97Pars
       switch ((jj_ntk==-1)?jj_ntk():jj_ntk) {
       case DEF:
       case TextureCoordinate:
-        label_43:
+        label_51:
         while (true) {
           switch ((jj_ntk==-1)?jj_ntk():jj_ntk) {
           case DEF:
             ;
             break;
           default:
-            jj_la1[82] = jj_gen;
-            break label_43;
+            jj_la1[90] = jj_gen;
+            break label_51;
           }
           Def();
         }
@@ -2679,13 +2843,13 @@ public class VRML97Parser extends Parser implements VRML97ParserType, VRML97Pars
         jj_consume_token(NULL);
         break;
       default:
-        jj_la1[83] = jj_gen;
+        jj_la1[91] = jj_gen;
         jj_consume_token(-1);
         throw new ParseException();
       }
       break;
     default:
-      jj_la1[84] = jj_gen;
+      jj_la1[92] = jj_gen;
       jj_consume_token(-1);
       throw new ParseException();
     }
@@ -2702,7 +2866,7 @@ public class VRML97Parser extends Parser implements VRML97ParserType, VRML97Pars
   final public void ElevationGrid() throws ParseException {
     ElevationGridID();
     NodeBegin();
-    label_44:
+    label_52:
     while (true) {
       switch ((jj_ntk==-1)?jj_ntk():jj_ntk) {
       case color:
@@ -2721,8 +2885,8 @@ public class VRML97Parser extends Parser implements VRML97ParserType, VRML97Pars
         ;
         break;
       default:
-        jj_la1[85] = jj_gen;
-        break label_44;
+        jj_la1[93] = jj_gen;
+        break label_52;
       }
       ElevationGridElement();
     }
@@ -2808,7 +2972,7 @@ public class VRML97Parser extends Parser implements VRML97ParserType, VRML97Pars
                         ((ExtrusionNode)getCurrentNode()).setSolid(bvalue);
       break;
     default:
-      jj_la1[86] = jj_gen;
+      jj_la1[94] = jj_gen;
       jj_consume_token(-1);
       throw new ParseException();
     }
@@ -2825,7 +2989,7 @@ public class VRML97Parser extends Parser implements VRML97ParserType, VRML97Pars
   final public void Extrusion() throws ParseException {
     ExtrusionID();
     NodeBegin();
-    label_45:
+    label_53:
     while (true) {
       switch ((jj_ntk==-1)?jj_ntk():jj_ntk) {
       case ccw:
@@ -2841,8 +3005,8 @@ public class VRML97Parser extends Parser implements VRML97ParserType, VRML97Pars
         ;
         break;
       default:
-        jj_la1[87] = jj_gen;
-        break label_45;
+        jj_la1[95] = jj_gen;
+        break label_53;
       }
       ExtrusionElement();
     }
@@ -2872,7 +3036,7 @@ public class VRML97Parser extends Parser implements VRML97ParserType, VRML97Pars
                         ((FogNode)getCurrentNode()).setVisibilityRange(fvalue);
       break;
     default:
-      jj_la1[88] = jj_gen;
+      jj_la1[96] = jj_gen;
       jj_consume_token(-1);
       throw new ParseException();
     }
@@ -2889,7 +3053,7 @@ public class VRML97Parser extends Parser implements VRML97ParserType, VRML97Pars
   final public void Fog() throws ParseException {
     FogID();
     NodeBegin();
-    label_46:
+    label_54:
     while (true) {
       switch ((jj_ntk==-1)?jj_ntk():jj_ntk) {
       case color:
@@ -2898,8 +3062,8 @@ public class VRML97Parser extends Parser implements VRML97ParserType, VRML97Pars
         ;
         break;
       default:
-        jj_la1[89] = jj_gen;
-        break label_46;
+        jj_la1[97] = jj_gen;
+        break label_54;
       }
       FogElement();
     }
@@ -2969,7 +3133,7 @@ public class VRML97Parser extends Parser implements VRML97ParserType, VRML97Pars
                         ((FontStyleNode)getCurrentNode()).setSpacing(fvalue);
       break;
     default:
-      jj_la1[90] = jj_gen;
+      jj_la1[98] = jj_gen;
       jj_consume_token(-1);
       throw new ParseException();
     }
@@ -2986,7 +3150,7 @@ public class VRML97Parser extends Parser implements VRML97ParserType, VRML97Pars
   final public void FontStyle() throws ParseException {
     FontStyleID();
     NodeBegin();
-    label_47:
+    label_55:
     while (true) {
       switch ((jj_ntk==-1)?jj_ntk():jj_ntk) {
       case size:
@@ -3001,8 +3165,8 @@ public class VRML97Parser extends Parser implements VRML97ParserType, VRML97Pars
         ;
         break;
       default:
-        jj_la1[91] = jj_gen;
-        break label_47;
+        jj_la1[99] = jj_gen;
+        break label_55;
       }
       FontStyleElement();
     }
@@ -3034,7 +3198,7 @@ public class VRML97Parser extends Parser implements VRML97ParserType, VRML97Pars
       RemoveChildren();
       break;
     default:
-      jj_la1[92] = jj_gen;
+      jj_la1[100] = jj_gen;
       jj_consume_token(-1);
       throw new ParseException();
     }
@@ -3052,7 +3216,7 @@ public class VRML97Parser extends Parser implements VRML97ParserType, VRML97Pars
   final public void Group() throws ParseException {
     GroupID();
     NodeBegin();
-    label_48:
+    label_56:
     while (true) {
       switch ((jj_ntk==-1)?jj_ntk():jj_ntk) {
       case children:
@@ -3063,8 +3227,8 @@ public class VRML97Parser extends Parser implements VRML97ParserType, VRML97Pars
         ;
         break;
       default:
-        jj_la1[93] = jj_gen;
-        break label_48;
+        jj_la1[101] = jj_gen;
+        break label_56;
       }
       GroupElement();
     }
@@ -3097,7 +3261,7 @@ public class VRML97Parser extends Parser implements VRML97ParserType, VRML97Pars
                         ((ImageTextureNode)getCurrentNode()).setRepeatT(bvalue);
       break;
     default:
-      jj_la1[94] = jj_gen;
+      jj_la1[102] = jj_gen;
       jj_consume_token(-1);
       throw new ParseException();
     }
@@ -3114,7 +3278,7 @@ public class VRML97Parser extends Parser implements VRML97ParserType, VRML97Pars
   final public void ImageTexture() throws ParseException {
     ImageTextureID();
     NodeBegin();
-    label_49:
+    label_57:
     while (true) {
       switch ((jj_ntk==-1)?jj_ntk():jj_ntk) {
       case url:
@@ -3123,8 +3287,8 @@ public class VRML97Parser extends Parser implements VRML97ParserType, VRML97Pars
         ;
         break;
       default:
-        jj_la1[95] = jj_gen;
-        break label_49;
+        jj_la1[103] = jj_gen;
+        break label_57;
       }
       ImageTextureElement();
     }
@@ -3162,15 +3326,15 @@ public class VRML97Parser extends Parser implements VRML97ParserType, VRML97Pars
       switch ((jj_ntk==-1)?jj_ntk():jj_ntk) {
       case DEF:
       case Coordinate:
-        label_50:
+        label_58:
         while (true) {
           switch ((jj_ntk==-1)?jj_ntk():jj_ntk) {
           case DEF:
             ;
             break;
           default:
-            jj_la1[96] = jj_gen;
-            break label_50;
+            jj_la1[104] = jj_gen;
+            break label_58;
           }
           Def();
         }
@@ -3183,7 +3347,7 @@ public class VRML97Parser extends Parser implements VRML97ParserType, VRML97Pars
         jj_consume_token(NULL);
         break;
       default:
-        jj_la1[97] = jj_gen;
+        jj_la1[105] = jj_gen;
         jj_consume_token(-1);
         throw new ParseException();
       }
@@ -3193,15 +3357,15 @@ public class VRML97Parser extends Parser implements VRML97ParserType, VRML97Pars
       switch ((jj_ntk==-1)?jj_ntk():jj_ntk) {
       case DEF:
       case Normal:
-        label_51:
+        label_59:
         while (true) {
           switch ((jj_ntk==-1)?jj_ntk():jj_ntk) {
           case DEF:
             ;
             break;
           default:
-            jj_la1[98] = jj_gen;
-            break label_51;
+            jj_la1[106] = jj_gen;
+            break label_59;
           }
           Def();
         }
@@ -3214,7 +3378,7 @@ public class VRML97Parser extends Parser implements VRML97ParserType, VRML97Pars
         jj_consume_token(NULL);
         break;
       default:
-        jj_la1[99] = jj_gen;
+        jj_la1[107] = jj_gen;
         jj_consume_token(-1);
         throw new ParseException();
       }
@@ -3224,15 +3388,15 @@ public class VRML97Parser extends Parser implements VRML97ParserType, VRML97Pars
       switch ((jj_ntk==-1)?jj_ntk():jj_ntk) {
       case DEF:
       case Color:
-        label_52:
+        label_60:
         while (true) {
           switch ((jj_ntk==-1)?jj_ntk():jj_ntk) {
           case DEF:
             ;
             break;
           default:
-            jj_la1[100] = jj_gen;
-            break label_52;
+            jj_la1[108] = jj_gen;
+            break label_60;
           }
           Def();
         }
@@ -3245,7 +3409,7 @@ public class VRML97Parser extends Parser implements VRML97ParserType, VRML97Pars
         jj_consume_token(NULL);
         break;
       default:
-        jj_la1[101] = jj_gen;
+        jj_la1[109] = jj_gen;
         jj_consume_token(-1);
         throw new ParseException();
       }
@@ -3255,15 +3419,15 @@ public class VRML97Parser extends Parser implements VRML97ParserType, VRML97Pars
       switch ((jj_ntk==-1)?jj_ntk():jj_ntk) {
       case DEF:
       case TextureCoordinate:
-        label_53:
+        label_61:
         while (true) {
           switch ((jj_ntk==-1)?jj_ntk():jj_ntk) {
           case DEF:
             ;
             break;
           default:
-            jj_la1[102] = jj_gen;
-            break label_53;
+            jj_la1[110] = jj_gen;
+            break label_61;
           }
           Def();
         }
@@ -3276,7 +3440,7 @@ public class VRML97Parser extends Parser implements VRML97ParserType, VRML97Pars
         jj_consume_token(NULL);
         break;
       default:
-        jj_la1[103] = jj_gen;
+        jj_la1[111] = jj_gen;
         jj_consume_token(-1);
         throw new ParseException();
       }
@@ -3332,7 +3496,7 @@ public class VRML97Parser extends Parser implements VRML97ParserType, VRML97Pars
                 ((IndexedFaceSetNode)getCurrentNode()).setNormalPerVertex(ok);
       break;
     default:
-      jj_la1[104] = jj_gen;
+      jj_la1[112] = jj_gen;
       jj_consume_token(-1);
       throw new ParseException();
     }
@@ -3349,7 +3513,7 @@ public class VRML97Parser extends Parser implements VRML97ParserType, VRML97Pars
   final public void IndexedFaceSet() throws ParseException {
     IdxFaceSetID();
     NodeBegin();
-    label_54:
+    label_62:
     while (true) {
       switch ((jj_ntk==-1)?jj_ntk():jj_ntk) {
       case color:
@@ -3369,8 +3533,8 @@ public class VRML97Parser extends Parser implements VRML97ParserType, VRML97Pars
         ;
         break;
       default:
-        jj_la1[105] = jj_gen;
-        break label_54;
+        jj_la1[113] = jj_gen;
+        break label_62;
       }
       IdxFaceSetElement();
     }
@@ -3398,15 +3562,15 @@ public class VRML97Parser extends Parser implements VRML97ParserType, VRML97Pars
       switch ((jj_ntk==-1)?jj_ntk():jj_ntk) {
       case DEF:
       case Coordinate:
-        label_55:
+        label_63:
         while (true) {
           switch ((jj_ntk==-1)?jj_ntk():jj_ntk) {
           case DEF:
             ;
             break;
           default:
-            jj_la1[106] = jj_gen;
-            break label_55;
+            jj_la1[114] = jj_gen;
+            break label_63;
           }
           Def();
         }
@@ -3419,7 +3583,7 @@ public class VRML97Parser extends Parser implements VRML97ParserType, VRML97Pars
         jj_consume_token(NULL);
         break;
       default:
-        jj_la1[107] = jj_gen;
+        jj_la1[115] = jj_gen;
         jj_consume_token(-1);
         throw new ParseException();
       }
@@ -3429,15 +3593,15 @@ public class VRML97Parser extends Parser implements VRML97ParserType, VRML97Pars
       switch ((jj_ntk==-1)?jj_ntk():jj_ntk) {
       case DEF:
       case Color:
-        label_56:
+        label_64:
         while (true) {
           switch ((jj_ntk==-1)?jj_ntk():jj_ntk) {
           case DEF:
             ;
             break;
           default:
-            jj_la1[108] = jj_gen;
-            break label_56;
+            jj_la1[116] = jj_gen;
+            break label_64;
           }
           Def();
         }
@@ -3450,7 +3614,7 @@ public class VRML97Parser extends Parser implements VRML97ParserType, VRML97Pars
         jj_consume_token(NULL);
         break;
       default:
-        jj_la1[109] = jj_gen;
+        jj_la1[117] = jj_gen;
         jj_consume_token(-1);
         throw new ParseException();
       }
@@ -3471,7 +3635,7 @@ public class VRML97Parser extends Parser implements VRML97ParserType, VRML97Pars
                 ((IndexedLineSetNode)getCurrentNode()).setColorPerVertex(ok);
       break;
     default:
-      jj_la1[110] = jj_gen;
+      jj_la1[118] = jj_gen;
       jj_consume_token(-1);
       throw new ParseException();
     }
@@ -3488,7 +3652,7 @@ public class VRML97Parser extends Parser implements VRML97ParserType, VRML97Pars
   final public void IndexedLineSet() throws ParseException {
     IdxLineSetID();
     NodeBegin();
-    label_57:
+    label_65:
     while (true) {
       switch ((jj_ntk==-1)?jj_ntk():jj_ntk) {
       case color:
@@ -3499,8 +3663,8 @@ public class VRML97Parser extends Parser implements VRML97ParserType, VRML97Pars
         ;
         break;
       default:
-        jj_la1[111] = jj_gen;
-        break label_57;
+        jj_la1[119] = jj_gen;
+        break label_65;
       }
       IdxLineSetElement();
     }
@@ -3534,7 +3698,7 @@ public class VRML97Parser extends Parser implements VRML97ParserType, VRML97Pars
                         ((InlineNode)getCurrentNode()).setBoundingBoxSize(vec);
       break;
     default:
-      jj_la1[112] = jj_gen;
+      jj_la1[120] = jj_gen;
       jj_consume_token(-1);
       throw new ParseException();
     }
@@ -3551,7 +3715,7 @@ public class VRML97Parser extends Parser implements VRML97ParserType, VRML97Pars
   final public void Inline() throws ParseException {
     InlineID();
     NodeBegin();
-    label_58:
+    label_66:
     while (true) {
       switch ((jj_ntk==-1)?jj_ntk():jj_ntk) {
       case url:
@@ -3560,8 +3724,8 @@ public class VRML97Parser extends Parser implements VRML97ParserType, VRML97Pars
         ;
         break;
       default:
-        jj_la1[113] = jj_gen;
-        break label_58;
+        jj_la1[121] = jj_gen;
+        break label_66;
       }
       InlineElement();
     }
@@ -3572,19 +3736,19 @@ public class VRML97Parser extends Parser implements VRML97ParserType, VRML97Pars
 
   final public void Level() throws ParseException {
     jj_consume_token(level);
-    label_59:
+    label_67:
     while (true) {
       switch ((jj_ntk==-1)?jj_ntk():jj_ntk) {
       case 13:
         ;
         break;
       default:
-        jj_la1[114] = jj_gen;
-        break label_59;
+        jj_la1[122] = jj_gen;
+        break label_67;
       }
       jj_consume_token(13);
     }
-    label_60:
+    label_68:
     while (true) {
       switch ((jj_ntk==-1)?jj_ntk():jj_ntk) {
       case NULL:
@@ -3626,32 +3790,32 @@ public class VRML97Parser extends Parser implements VRML97ParserType, VRML97Pars
         ;
         break;
       default:
-        jj_la1[115] = jj_gen;
-        break label_60;
+        jj_la1[123] = jj_gen;
+        break label_68;
       }
-      label_61:
+      label_69:
       while (true) {
         switch ((jj_ntk==-1)?jj_ntk():jj_ntk) {
         case DEF:
           ;
           break;
         default:
-          jj_la1[116] = jj_gen;
-          break label_61;
+          jj_la1[124] = jj_gen;
+          break label_69;
         }
         Def();
       }
       ChildrenElement();
     }
-    label_62:
+    label_70:
     while (true) {
       switch ((jj_ntk==-1)?jj_ntk():jj_ntk) {
       case 14:
         ;
         break;
       default:
-        jj_la1[117] = jj_gen;
-        break label_62;
+        jj_la1[125] = jj_gen;
+        break label_70;
       }
       jj_consume_token(14);
     }
@@ -3679,7 +3843,7 @@ public class VRML97Parser extends Parser implements VRML97ParserType, VRML97Pars
       Level();
       break;
     default:
-      jj_la1[118] = jj_gen;
+      jj_la1[126] = jj_gen;
       jj_consume_token(-1);
       throw new ParseException();
     }
@@ -3696,7 +3860,7 @@ public class VRML97Parser extends Parser implements VRML97ParserType, VRML97Pars
   final public void LOD() throws ParseException {
     LODID();
     NodeBegin();
-    label_63:
+    label_71:
     while (true) {
       switch ((jj_ntk==-1)?jj_ntk():jj_ntk) {
       case center:
@@ -3705,8 +3869,8 @@ public class VRML97Parser extends Parser implements VRML97ParserType, VRML97Pars
         ;
         break;
       default:
-        jj_la1[119] = jj_gen;
-        break label_63;
+        jj_la1[127] = jj_gen;
+        break label_71;
       }
       LODElement();
     }
@@ -3750,7 +3914,7 @@ public class VRML97Parser extends Parser implements VRML97ParserType, VRML97Pars
                         ((MaterialNode)getCurrentNode()).setEmissiveColor(color);
       break;
     default:
-      jj_la1[120] = jj_gen;
+      jj_la1[128] = jj_gen;
       jj_consume_token(-1);
       throw new ParseException();
     }
@@ -3767,7 +3931,7 @@ public class VRML97Parser extends Parser implements VRML97ParserType, VRML97Pars
   final public void Material() throws ParseException {
     MaterialID();
     NodeBegin();
-    label_64:
+    label_72:
     while (true) {
       switch ((jj_ntk==-1)?jj_ntk():jj_ntk) {
       case ambientIntensity:
@@ -3779,8 +3943,8 @@ public class VRML97Parser extends Parser implements VRML97ParserType, VRML97Pars
         ;
         break;
       default:
-        jj_la1[121] = jj_gen;
-        break label_64;
+        jj_la1[129] = jj_gen;
+        break label_72;
       }
       MaterialElement();
     }
@@ -3835,7 +3999,7 @@ public class VRML97Parser extends Parser implements VRML97ParserType, VRML97Pars
                         ((MovieTextureNode)getCurrentNode()).setSpeed(fvalue);
       break;
     default:
-      jj_la1[122] = jj_gen;
+      jj_la1[130] = jj_gen;
       jj_consume_token(-1);
       throw new ParseException();
     }
@@ -3852,7 +4016,7 @@ public class VRML97Parser extends Parser implements VRML97ParserType, VRML97Pars
   final public void MovieTexture() throws ParseException {
     MovieTextureID();
     NodeBegin();
-    label_65:
+    label_73:
     while (true) {
       switch ((jj_ntk==-1)?jj_ntk():jj_ntk) {
       case url:
@@ -3865,8 +4029,8 @@ public class VRML97Parser extends Parser implements VRML97ParserType, VRML97Pars
         ;
         break;
       default:
-        jj_la1[123] = jj_gen;
-        break label_65;
+        jj_la1[131] = jj_gen;
+        break label_73;
       }
       MovieTextureElement();
     }
@@ -3924,7 +4088,7 @@ public class VRML97Parser extends Parser implements VRML97ParserType, VRML97Pars
                         ((NavigationInfoNode)getCurrentNode()).setVisibilityLimit(fvalue);
       break;
     default:
-      jj_la1[124] = jj_gen;
+      jj_la1[132] = jj_gen;
       jj_consume_token(-1);
       throw new ParseException();
     }
@@ -3933,7 +4097,7 @@ public class VRML97Parser extends Parser implements VRML97ParserType, VRML97Pars
   final public void NavigationInfo() throws ParseException {
     NavigationInfoID();
     NodeBegin();
-    label_66:
+    label_74:
     while (true) {
       switch ((jj_ntk==-1)?jj_ntk():jj_ntk) {
       case speed:
@@ -3944,8 +4108,8 @@ public class VRML97Parser extends Parser implements VRML97ParserType, VRML97Pars
         ;
         break;
       default:
-        jj_la1[125] = jj_gen;
-        break label_66;
+        jj_la1[133] = jj_gen;
+        break label_74;
       }
       NavigationInfoElement();
     }
@@ -4006,7 +4170,7 @@ public class VRML97Parser extends Parser implements VRML97ParserType, VRML97Pars
                         popNode();
       break;
     default:
-      jj_la1[126] = jj_gen;
+      jj_la1[134] = jj_gen;
       jj_consume_token(-1);
       throw new ParseException();
     }
@@ -4015,7 +4179,7 @@ public class VRML97Parser extends Parser implements VRML97ParserType, VRML97Pars
   final public void NormalInterpolator() throws ParseException {
     NormalInterpolatorID();
     NodeBegin();
-    label_67:
+    label_75:
     while (true) {
       switch ((jj_ntk==-1)?jj_ntk():jj_ntk) {
       case key:
@@ -4023,8 +4187,8 @@ public class VRML97Parser extends Parser implements VRML97ParserType, VRML97Pars
         ;
         break;
       default:
-        jj_la1[127] = jj_gen;
-        break label_67;
+        jj_la1[135] = jj_gen;
+        break label_75;
       }
       NormalInterpolatorElement();
     }
@@ -4064,7 +4228,7 @@ public class VRML97Parser extends Parser implements VRML97ParserType, VRML97Pars
                         popNode();
       break;
     default:
-      jj_la1[128] = jj_gen;
+      jj_la1[136] = jj_gen;
       jj_consume_token(-1);
       throw new ParseException();
     }
@@ -4073,7 +4237,7 @@ public class VRML97Parser extends Parser implements VRML97ParserType, VRML97Pars
   final public void OrientationInterpolator() throws ParseException {
     OrientationInterpolatorID();
     NodeBegin();
-    label_68:
+    label_76:
     while (true) {
       switch ((jj_ntk==-1)?jj_ntk():jj_ntk) {
       case key:
@@ -4081,8 +4245,8 @@ public class VRML97Parser extends Parser implements VRML97ParserType, VRML97Pars
         ;
         break;
       default:
-        jj_la1[129] = jj_gen;
-        break label_68;
+        jj_la1[137] = jj_gen;
+        break label_76;
       }
       OrientationInterpolatorElement();
     }
@@ -4115,7 +4279,7 @@ public class VRML97Parser extends Parser implements VRML97ParserType, VRML97Pars
                         ((PixelTextureNode)getCurrentNode()).setRepeatT(bvalue);
       break;
     default:
-      jj_la1[130] = jj_gen;
+      jj_la1[138] = jj_gen;
       jj_consume_token(-1);
       throw new ParseException();
     }
@@ -4132,7 +4296,7 @@ public class VRML97Parser extends Parser implements VRML97ParserType, VRML97Pars
   final public void PixelTexture() throws ParseException {
     PixelTextureID();
     NodeBegin();
-    label_69:
+    label_77:
     while (true) {
       switch ((jj_ntk==-1)?jj_ntk():jj_ntk) {
       case repeatS:
@@ -4141,8 +4305,8 @@ public class VRML97Parser extends Parser implements VRML97ParserType, VRML97Pars
         ;
         break;
       default:
-        jj_la1[131] = jj_gen;
-        break label_69;
+        jj_la1[139] = jj_gen;
+        break label_77;
       }
       PixelTextureElement();
     }
@@ -4183,7 +4347,7 @@ public class VRML97Parser extends Parser implements VRML97ParserType, VRML97Pars
                         ((PlaneSensorNode)getCurrentNode()).setAutoOffset(bvalue);
       break;
     default:
-      jj_la1[132] = jj_gen;
+      jj_la1[140] = jj_gen;
       jj_consume_token(-1);
       throw new ParseException();
     }
@@ -4200,7 +4364,7 @@ public class VRML97Parser extends Parser implements VRML97ParserType, VRML97Pars
   final public void PlaneSensor() throws ParseException {
     PlaneSensorID();
     NodeBegin();
-    label_70:
+    label_78:
     while (true) {
       switch ((jj_ntk==-1)?jj_ntk():jj_ntk) {
       case enabled:
@@ -4211,8 +4375,8 @@ public class VRML97Parser extends Parser implements VRML97ParserType, VRML97Pars
         ;
         break;
       default:
-        jj_la1[133] = jj_gen;
-        break label_70;
+        jj_la1[141] = jj_gen;
+        break label_78;
       }
       PlaneSensorElement();
     }
@@ -4262,7 +4426,7 @@ public class VRML97Parser extends Parser implements VRML97ParserType, VRML97Pars
                         ((PointLightNode)getCurrentNode()).setAttenuation(value3f);
       break;
     default:
-      jj_la1[134] = jj_gen;
+      jj_la1[142] = jj_gen;
       jj_consume_token(-1);
       throw new ParseException();
     }
@@ -4279,7 +4443,7 @@ public class VRML97Parser extends Parser implements VRML97ParserType, VRML97Pars
   final public void PointLight() throws ParseException {
     PointLightID();
     NodeBegin();
-    label_71:
+    label_79:
     while (true) {
       switch ((jj_ntk==-1)?jj_ntk():jj_ntk) {
       case color:
@@ -4292,8 +4456,8 @@ public class VRML97Parser extends Parser implements VRML97ParserType, VRML97Pars
         ;
         break;
       default:
-        jj_la1[135] = jj_gen;
-        break label_71;
+        jj_la1[143] = jj_gen;
+        break label_79;
       }
       PointLightElement();
     }
@@ -4309,15 +4473,15 @@ public class VRML97Parser extends Parser implements VRML97ParserType, VRML97Pars
       switch ((jj_ntk==-1)?jj_ntk():jj_ntk) {
       case DEF:
       case Color:
-        label_72:
+        label_80:
         while (true) {
           switch ((jj_ntk==-1)?jj_ntk():jj_ntk) {
           case DEF:
             ;
             break;
           default:
-            jj_la1[136] = jj_gen;
-            break label_72;
+            jj_la1[144] = jj_gen;
+            break label_80;
           }
           Def();
         }
@@ -4330,7 +4494,7 @@ public class VRML97Parser extends Parser implements VRML97ParserType, VRML97Pars
         jj_consume_token(NULL);
         break;
       default:
-        jj_la1[137] = jj_gen;
+        jj_la1[145] = jj_gen;
         jj_consume_token(-1);
         throw new ParseException();
       }
@@ -4340,15 +4504,15 @@ public class VRML97Parser extends Parser implements VRML97ParserType, VRML97Pars
       switch ((jj_ntk==-1)?jj_ntk():jj_ntk) {
       case DEF:
       case Coordinate:
-        label_73:
+        label_81:
         while (true) {
           switch ((jj_ntk==-1)?jj_ntk():jj_ntk) {
           case DEF:
             ;
             break;
           default:
-            jj_la1[138] = jj_gen;
-            break label_73;
+            jj_la1[146] = jj_gen;
+            break label_81;
           }
           Def();
         }
@@ -4361,13 +4525,13 @@ public class VRML97Parser extends Parser implements VRML97ParserType, VRML97Pars
         jj_consume_token(NULL);
         break;
       default:
-        jj_la1[139] = jj_gen;
+        jj_la1[147] = jj_gen;
         jj_consume_token(-1);
         throw new ParseException();
       }
       break;
     default:
-      jj_la1[140] = jj_gen;
+      jj_la1[148] = jj_gen;
       jj_consume_token(-1);
       throw new ParseException();
     }
@@ -4384,7 +4548,7 @@ public class VRML97Parser extends Parser implements VRML97ParserType, VRML97Pars
   final public void PointSet() throws ParseException {
     PointSetID();
     NodeBegin();
-    label_74:
+    label_82:
     while (true) {
       switch ((jj_ntk==-1)?jj_ntk():jj_ntk) {
       case color:
@@ -4392,8 +4556,8 @@ public class VRML97Parser extends Parser implements VRML97ParserType, VRML97Pars
         ;
         break;
       default:
-        jj_la1[141] = jj_gen;
-        break label_74;
+        jj_la1[149] = jj_gen;
+        break label_82;
       }
       PointSetElement();
     }
@@ -4436,7 +4600,7 @@ public class VRML97Parser extends Parser implements VRML97ParserType, VRML97Pars
                         popNode();
       break;
     default:
-      jj_la1[142] = jj_gen;
+      jj_la1[150] = jj_gen;
       jj_consume_token(-1);
       throw new ParseException();
     }
@@ -4445,7 +4609,7 @@ public class VRML97Parser extends Parser implements VRML97ParserType, VRML97Pars
   final public void PositionInterpolator() throws ParseException {
     PositionInterpolatorID();
     NodeBegin();
-    label_75:
+    label_83:
     while (true) {
       switch ((jj_ntk==-1)?jj_ntk():jj_ntk) {
       case key:
@@ -4453,8 +4617,8 @@ public class VRML97Parser extends Parser implements VRML97ParserType, VRML97Pars
         ;
         break;
       default:
-        jj_la1[143] = jj_gen;
-        break label_75;
+        jj_la1[151] = jj_gen;
+        break label_83;
       }
       PositionInterpolatorElement();
     }
@@ -4484,7 +4648,7 @@ public class VRML97Parser extends Parser implements VRML97ParserType, VRML97Pars
                         ((ProximitySensorNode)getCurrentNode()).setEnabled(bvalue);
       break;
     default:
-      jj_la1[144] = jj_gen;
+      jj_la1[152] = jj_gen;
       jj_consume_token(-1);
       throw new ParseException();
     }
@@ -4501,7 +4665,7 @@ public class VRML97Parser extends Parser implements VRML97ParserType, VRML97Pars
   final public void ProximitySensor() throws ParseException {
     ProximitySensorID();
     NodeBegin();
-    label_76:
+    label_84:
     while (true) {
       switch ((jj_ntk==-1)?jj_ntk():jj_ntk) {
       case size:
@@ -4510,8 +4674,8 @@ public class VRML97Parser extends Parser implements VRML97ParserType, VRML97Pars
         ;
         break;
       default:
-        jj_la1[145] = jj_gen;
-        break label_76;
+        jj_la1[153] = jj_gen;
+        break label_84;
       }
       ProximitySensorElement();
     }
@@ -4551,7 +4715,7 @@ public class VRML97Parser extends Parser implements VRML97ParserType, VRML97Pars
                         popNode();
       break;
     default:
-      jj_la1[146] = jj_gen;
+      jj_la1[154] = jj_gen;
       jj_consume_token(-1);
       throw new ParseException();
     }
@@ -4560,7 +4724,7 @@ public class VRML97Parser extends Parser implements VRML97ParserType, VRML97Pars
   final public void ScalarInterpolator() throws ParseException {
     ScalarInterpolatorID();
     NodeBegin();
-    label_77:
+    label_85:
     while (true) {
       switch ((jj_ntk==-1)?jj_ntk():jj_ntk) {
       case key:
@@ -4568,8 +4732,8 @@ public class VRML97Parser extends Parser implements VRML97ParserType, VRML97Pars
         ;
         break;
       default:
-        jj_la1[147] = jj_gen;
-        break label_77;
+        jj_la1[155] = jj_gen;
+        break label_85;
       }
       ScalarInterpolatorElement();
     }
@@ -4628,7 +4792,7 @@ public class VRML97Parser extends Parser implements VRML97ParserType, VRML97Pars
                         script.setMustEvaluate(bvalue);
       break;
     default:
-      jj_la1[148] = jj_gen;
+      jj_la1[156] = jj_gen;
       if (jj_2_1(2)) {
         jj_consume_token(eventIn);
         jj_consume_token(SFBool);
@@ -4975,7 +5139,7 @@ public class VRML97Parser extends Parser implements VRML97ParserType, VRML97Pars
   final public void Script() throws ParseException {
     ScriptID();
     NodeBegin();
-    label_78:
+    label_86:
     while (true) {
       switch ((jj_ntk==-1)?jj_ntk():jj_ntk) {
       case url:
@@ -4987,8 +5151,8 @@ public class VRML97Parser extends Parser implements VRML97ParserType, VRML97Pars
         ;
         break;
       default:
-        jj_la1[149] = jj_gen;
-        break label_78;
+        jj_la1[157] = jj_gen;
+        break label_86;
       }
       ScriptElement();
     }
@@ -5052,15 +5216,15 @@ public class VRML97Parser extends Parser implements VRML97ParserType, VRML97Pars
       switch ((jj_ntk==-1)?jj_ntk():jj_ntk) {
       case DEF:
       case AudioClip:
-        label_79:
+        label_87:
         while (true) {
           switch ((jj_ntk==-1)?jj_ntk():jj_ntk) {
           case DEF:
             ;
             break;
           default:
-            jj_la1[150] = jj_gen;
-            break label_79;
+            jj_la1[158] = jj_gen;
+            break label_87;
           }
           Def();
         }
@@ -5073,13 +5237,13 @@ public class VRML97Parser extends Parser implements VRML97ParserType, VRML97Pars
         jj_consume_token(NULL);
         break;
       default:
-        jj_la1[151] = jj_gen;
+        jj_la1[159] = jj_gen;
         jj_consume_token(-1);
         throw new ParseException();
       }
       break;
     default:
-      jj_la1[152] = jj_gen;
+      jj_la1[160] = jj_gen;
       jj_consume_token(-1);
       throw new ParseException();
     }
@@ -5096,7 +5260,7 @@ public class VRML97Parser extends Parser implements VRML97ParserType, VRML97Pars
   final public void Sound() throws ParseException {
     SoundID();
     NodeBegin();
-    label_80:
+    label_88:
     while (true) {
       switch ((jj_ntk==-1)?jj_ntk():jj_ntk) {
       case intensity:
@@ -5112,8 +5276,8 @@ public class VRML97Parser extends Parser implements VRML97ParserType, VRML97Pars
         ;
         break;
       default:
-        jj_la1[153] = jj_gen;
-        break label_80;
+        jj_la1[161] = jj_gen;
+        break label_88;
       }
       SoundElement();
     }
@@ -5140,15 +5304,15 @@ public class VRML97Parser extends Parser implements VRML97ParserType, VRML97Pars
   final public void Sphere() throws ParseException {
     SphereID();
     NodeBegin();
-    label_81:
+    label_89:
     while (true) {
       switch ((jj_ntk==-1)?jj_ntk():jj_ntk) {
       case radius:
         ;
         break;
       default:
-        jj_la1[154] = jj_gen;
-        break label_81;
+        jj_la1[162] = jj_gen;
+        break label_89;
       }
       SphereElement();
     }
@@ -5177,7 +5341,7 @@ public class VRML97Parser extends Parser implements VRML97ParserType, VRML97Pars
                         ((SphereSensorNode)getCurrentNode()).setAutoOffset(bvalue);
       break;
     default:
-      jj_la1[155] = jj_gen;
+      jj_la1[163] = jj_gen;
       jj_consume_token(-1);
       throw new ParseException();
     }
@@ -5194,7 +5358,7 @@ public class VRML97Parser extends Parser implements VRML97ParserType, VRML97Pars
   final public void SphereSensor() throws ParseException {
     SphereSensorID();
     NodeBegin();
-    label_82:
+    label_90:
     while (true) {
       switch ((jj_ntk==-1)?jj_ntk():jj_ntk) {
       case enabled:
@@ -5203,8 +5367,8 @@ public class VRML97Parser extends Parser implements VRML97ParserType, VRML97Pars
         ;
         break;
       default:
-        jj_la1[156] = jj_gen;
-        break label_82;
+        jj_la1[164] = jj_gen;
+        break label_90;
       }
       SphereSensorElement();
     }
@@ -5269,7 +5433,7 @@ public class VRML97Parser extends Parser implements VRML97ParserType, VRML97Pars
                         ((SpotLightNode)getCurrentNode()).setRadius(value);
       break;
     default:
-      jj_la1[157] = jj_gen;
+      jj_la1[165] = jj_gen;
       jj_consume_token(-1);
       throw new ParseException();
     }
@@ -5286,7 +5450,7 @@ public class VRML97Parser extends Parser implements VRML97ParserType, VRML97Pars
   final public void SpotLight() throws ParseException {
     SpotLightID();
     NodeBegin();
-    label_83:
+    label_91:
     while (true) {
       switch ((jj_ntk==-1)?jj_ntk():jj_ntk) {
       case color:
@@ -5302,8 +5466,8 @@ public class VRML97Parser extends Parser implements VRML97ParserType, VRML97Pars
         ;
         break;
       default:
-        jj_la1[158] = jj_gen;
-        break label_83;
+        jj_la1[166] = jj_gen;
+        break label_91;
       }
       SpotLightElement();
     }
@@ -5328,15 +5492,15 @@ public class VRML97Parser extends Parser implements VRML97ParserType, VRML97Pars
       case PointSet:
       case Sphere:
       case Text:
-        label_84:
+        label_92:
         while (true) {
           switch ((jj_ntk==-1)?jj_ntk():jj_ntk) {
           case DEF:
             ;
             break;
           default:
-            jj_la1[159] = jj_gen;
-            break label_84;
+            jj_la1[167] = jj_gen;
+            break label_92;
           }
           Def();
         }
@@ -5349,7 +5513,7 @@ public class VRML97Parser extends Parser implements VRML97ParserType, VRML97Pars
         jj_consume_token(NULL);
         break;
       default:
-        jj_la1[160] = jj_gen;
+        jj_la1[168] = jj_gen;
         jj_consume_token(-1);
         throw new ParseException();
       }
@@ -5359,15 +5523,15 @@ public class VRML97Parser extends Parser implements VRML97ParserType, VRML97Pars
       switch ((jj_ntk==-1)?jj_ntk():jj_ntk) {
       case DEF:
       case Appearance:
-        label_85:
+        label_93:
         while (true) {
           switch ((jj_ntk==-1)?jj_ntk():jj_ntk) {
           case DEF:
             ;
             break;
           default:
-            jj_la1[161] = jj_gen;
-            break label_85;
+            jj_la1[169] = jj_gen;
+            break label_93;
           }
           Def();
         }
@@ -5380,13 +5544,13 @@ public class VRML97Parser extends Parser implements VRML97ParserType, VRML97Pars
         jj_consume_token(NULL);
         break;
       default:
-        jj_la1[162] = jj_gen;
+        jj_la1[170] = jj_gen;
         jj_consume_token(-1);
         throw new ParseException();
       }
       break;
     default:
-      jj_la1[163] = jj_gen;
+      jj_la1[171] = jj_gen;
       jj_consume_token(-1);
       throw new ParseException();
     }
@@ -5403,7 +5567,7 @@ public class VRML97Parser extends Parser implements VRML97ParserType, VRML97Pars
   final public void Shape() throws ParseException {
     ShapeID();
     NodeBegin();
-    label_86:
+    label_94:
     while (true) {
       switch ((jj_ntk==-1)?jj_ntk():jj_ntk) {
       case appearance:
@@ -5411,8 +5575,8 @@ public class VRML97Parser extends Parser implements VRML97ParserType, VRML97Pars
         ;
         break;
       default:
-        jj_la1[164] = jj_gen;
-        break label_86;
+        jj_la1[172] = jj_gen;
+        break label_94;
       }
       ShapeElement();
     }
@@ -5423,19 +5587,19 @@ public class VRML97Parser extends Parser implements VRML97ParserType, VRML97Pars
 
   final public void Choice() throws ParseException {
     jj_consume_token(choice);
-    label_87:
+    label_95:
     while (true) {
       switch ((jj_ntk==-1)?jj_ntk():jj_ntk) {
       case 13:
         ;
         break;
       default:
-        jj_la1[165] = jj_gen;
-        break label_87;
+        jj_la1[173] = jj_gen;
+        break label_95;
       }
       jj_consume_token(13);
     }
-    label_88:
+    label_96:
     while (true) {
       switch ((jj_ntk==-1)?jj_ntk():jj_ntk) {
       case NULL:
@@ -5477,32 +5641,32 @@ public class VRML97Parser extends Parser implements VRML97ParserType, VRML97Pars
         ;
         break;
       default:
-        jj_la1[166] = jj_gen;
-        break label_88;
+        jj_la1[174] = jj_gen;
+        break label_96;
       }
-      label_89:
+      label_97:
       while (true) {
         switch ((jj_ntk==-1)?jj_ntk():jj_ntk) {
         case DEF:
           ;
           break;
         default:
-          jj_la1[167] = jj_gen;
-          break label_89;
+          jj_la1[175] = jj_gen;
+          break label_97;
         }
         Def();
       }
       ChildrenElement();
     }
-    label_90:
+    label_98:
     while (true) {
       switch ((jj_ntk==-1)?jj_ntk():jj_ntk) {
       case 14:
         ;
         break;
       default:
-        jj_la1[168] = jj_gen;
-        break label_90;
+        jj_la1[176] = jj_gen;
+        break label_98;
       }
       jj_consume_token(14);
     }
@@ -5520,7 +5684,7 @@ public class VRML97Parser extends Parser implements VRML97ParserType, VRML97Pars
       Choice();
       break;
     default:
-      jj_la1[169] = jj_gen;
+      jj_la1[177] = jj_gen;
       jj_consume_token(-1);
       throw new ParseException();
     }
@@ -5537,7 +5701,7 @@ public class VRML97Parser extends Parser implements VRML97ParserType, VRML97Pars
   final public void Switch() throws ParseException {
     SwitchID();
     NodeBegin();
-    label_91:
+    label_99:
     while (true) {
       switch ((jj_ntk==-1)?jj_ntk():jj_ntk) {
       case whichChoice:
@@ -5545,8 +5709,8 @@ public class VRML97Parser extends Parser implements VRML97ParserType, VRML97Pars
         ;
         break;
       default:
-        jj_la1[170] = jj_gen;
-        break label_91;
+        jj_la1[178] = jj_gen;
+        break label_99;
       }
       SwitchElement();
     }
@@ -5588,15 +5752,15 @@ public class VRML97Parser extends Parser implements VRML97ParserType, VRML97Pars
       switch ((jj_ntk==-1)?jj_ntk():jj_ntk) {
       case DEF:
       case FontStyle:
-        label_92:
+        label_100:
         while (true) {
           switch ((jj_ntk==-1)?jj_ntk():jj_ntk) {
           case DEF:
             ;
             break;
           default:
-            jj_la1[171] = jj_gen;
-            break label_92;
+            jj_la1[179] = jj_gen;
+            break label_100;
           }
           Def();
         }
@@ -5609,13 +5773,13 @@ public class VRML97Parser extends Parser implements VRML97ParserType, VRML97Pars
         jj_consume_token(NULL);
         break;
       default:
-        jj_la1[172] = jj_gen;
+        jj_la1[180] = jj_gen;
         jj_consume_token(-1);
         throw new ParseException();
       }
       break;
     default:
-      jj_la1[173] = jj_gen;
+      jj_la1[181] = jj_gen;
       jj_consume_token(-1);
       throw new ParseException();
     }
@@ -5632,7 +5796,7 @@ public class VRML97Parser extends Parser implements VRML97ParserType, VRML97Pars
   final public void Text() throws ParseException {
     TextID();
     NodeBegin();
-    label_93:
+    label_101:
     while (true) {
       switch ((jj_ntk==-1)?jj_ntk():jj_ntk) {
       case string:
@@ -5642,8 +5806,8 @@ public class VRML97Parser extends Parser implements VRML97ParserType, VRML97Pars
         ;
         break;
       default:
-        jj_la1[174] = jj_gen;
-        break label_93;
+        jj_la1[182] = jj_gen;
+        break label_101;
       }
       TextElement();
     }
@@ -5695,7 +5859,7 @@ public class VRML97Parser extends Parser implements VRML97ParserType, VRML97Pars
                         ((TextureTransformNode)getCurrentNode()).setCenter(vec);
       break;
     default:
-      jj_la1[175] = jj_gen;
+      jj_la1[183] = jj_gen;
       jj_consume_token(-1);
       throw new ParseException();
     }
@@ -5712,7 +5876,7 @@ public class VRML97Parser extends Parser implements VRML97ParserType, VRML97Pars
   final public void TextureTransform() throws ParseException {
     TextureTransformID();
     NodeBegin();
-    label_94:
+    label_102:
     while (true) {
       switch ((jj_ntk==-1)?jj_ntk():jj_ntk) {
       case center:
@@ -5722,8 +5886,8 @@ public class VRML97Parser extends Parser implements VRML97ParserType, VRML97Pars
         ;
         break;
       default:
-        jj_la1[176] = jj_gen;
-        break label_94;
+        jj_la1[184] = jj_gen;
+        break label_102;
       }
       TextureTransformElement();
     }
@@ -5762,7 +5926,7 @@ public class VRML97Parser extends Parser implements VRML97ParserType, VRML97Pars
                         ((TimeSensorNode)getCurrentNode()).setStopTime(fvalue);
       break;
     default:
-      jj_la1[177] = jj_gen;
+      jj_la1[185] = jj_gen;
       jj_consume_token(-1);
       throw new ParseException();
     }
@@ -5779,7 +5943,7 @@ public class VRML97Parser extends Parser implements VRML97ParserType, VRML97Pars
   final public void TimeSensor() throws ParseException {
     TimeSensorID();
     NodeBegin();
-    label_95:
+    label_103:
     while (true) {
       switch ((jj_ntk==-1)?jj_ntk():jj_ntk) {
       case loop:
@@ -5790,8 +5954,8 @@ public class VRML97Parser extends Parser implements VRML97ParserType, VRML97Pars
         ;
         break;
       default:
-        jj_la1[178] = jj_gen;
-        break label_95;
+        jj_la1[186] = jj_gen;
+        break label_103;
       }
       TimeSensorElement();
     }
@@ -5818,15 +5982,15 @@ public class VRML97Parser extends Parser implements VRML97ParserType, VRML97Pars
   final public void TouchSensor() throws ParseException {
     TouchSensorID();
     NodeBegin();
-    label_96:
+    label_104:
     while (true) {
       switch ((jj_ntk==-1)?jj_ntk():jj_ntk) {
       case enabled:
         ;
         break;
       default:
-        jj_la1[179] = jj_gen;
-        break label_96;
+        jj_la1[187] = jj_gen;
+        break label_104;
       }
       TouchSensorElement();
     }
@@ -5877,8 +6041,14 @@ public class VRML97Parser extends Parser implements VRML97ParserType, VRML97Pars
     case children:
       Children();
       break;
+    case addChildren:
+      AddChildren();
+      break;
+    case removeChildren:
+      RemoveChildren();
+      break;
     default:
-      jj_la1[180] = jj_gen;
+      jj_la1[188] = jj_gen;
       jj_consume_token(-1);
       throw new ParseException();
     }
@@ -5896,10 +6066,12 @@ public class VRML97Parser extends Parser implements VRML97ParserType, VRML97Pars
   final public void Transform() throws ParseException {
     TransformID();
     NodeBegin();
-    label_97:
+    label_105:
     while (true) {
       switch ((jj_ntk==-1)?jj_ntk():jj_ntk) {
       case children:
+      case addChildren:
+      case removeChildren:
       case bboxCenter:
       case bboxSize:
       case center:
@@ -5910,8 +6082,8 @@ public class VRML97Parser extends Parser implements VRML97ParserType, VRML97Pars
         ;
         break;
       default:
-        jj_la1[181] = jj_gen;
-        break label_97;
+        jj_la1[189] = jj_gen;
+        break label_105;
       }
       TransformElement();
     }
@@ -5953,7 +6125,7 @@ public class VRML97Parser extends Parser implements VRML97ParserType, VRML97Pars
                         ((ViewpointNode)getCurrentNode()).setDescription(string);
       break;
     default:
-      jj_la1[182] = jj_gen;
+      jj_la1[190] = jj_gen;
       jj_consume_token(-1);
       throw new ParseException();
     }
@@ -5970,7 +6142,7 @@ public class VRML97Parser extends Parser implements VRML97ParserType, VRML97Pars
   final public void Viewpoint() throws ParseException {
     ViewpointID();
     NodeBegin();
-    label_98:
+    label_106:
     while (true) {
       switch ((jj_ntk==-1)?jj_ntk():jj_ntk) {
       case description:
@@ -5981,8 +6153,8 @@ public class VRML97Parser extends Parser implements VRML97ParserType, VRML97Pars
         ;
         break;
       default:
-        jj_la1[183] = jj_gen;
-        break label_98;
+        jj_la1[191] = jj_gen;
+        break label_106;
       }
       ViewpointElement();
     }
@@ -6011,7 +6183,7 @@ public class VRML97Parser extends Parser implements VRML97ParserType, VRML97Pars
                         ((VisibilitySensorNode)getCurrentNode()).setEnabled(bvalue);
       break;
     default:
-      jj_la1[184] = jj_gen;
+      jj_la1[192] = jj_gen;
       jj_consume_token(-1);
       throw new ParseException();
     }
@@ -6028,7 +6200,7 @@ public class VRML97Parser extends Parser implements VRML97ParserType, VRML97Pars
   final public void VisibilitySensor() throws ParseException {
     VisibilitySensorID();
     NodeBegin();
-    label_99:
+    label_107:
     while (true) {
       switch ((jj_ntk==-1)?jj_ntk():jj_ntk) {
       case size:
@@ -6037,8 +6209,8 @@ public class VRML97Parser extends Parser implements VRML97ParserType, VRML97Pars
         ;
         break;
       default:
-        jj_la1[185] = jj_gen;
-        break label_99;
+        jj_la1[193] = jj_gen;
+        break label_107;
       }
       VisibilitySensorElement();
     }
@@ -6067,7 +6239,7 @@ public class VRML97Parser extends Parser implements VRML97ParserType, VRML97Pars
                         popNode();
       break;
     default:
-      jj_la1[186] = jj_gen;
+      jj_la1[194] = jj_gen;
       jj_consume_token(-1);
       throw new ParseException();
     }
@@ -6084,7 +6256,7 @@ public class VRML97Parser extends Parser implements VRML97ParserType, VRML97Pars
   final public void WorldInfo() throws ParseException {
     WorldInfoID();
     NodeBegin();
-    label_100:
+    label_108:
     while (true) {
       switch ((jj_ntk==-1)?jj_ntk():jj_ntk) {
       case title:
@@ -6092,8 +6264,8 @@ public class VRML97Parser extends Parser implements VRML97ParserType, VRML97Pars
         ;
         break;
       default:
-        jj_la1[187] = jj_gen;
-        break label_100;
+        jj_la1[195] = jj_gen;
+        break label_108;
       }
       WorldInfoElement();
     }
@@ -6103,7 +6275,7 @@ public class VRML97Parser extends Parser implements VRML97ParserType, VRML97Pars
   }
 
   final public void Input() throws ParseException {
-    label_101:
+    label_109:
     while (true) {
       switch ((jj_ntk==-1)?jj_ntk():jj_ntk) {
       case DEF:
@@ -6145,8 +6317,8 @@ public class VRML97Parser extends Parser implements VRML97ParserType, VRML97Pars
         ;
         break;
       default:
-        jj_la1[188] = jj_gen;
-        break label_101;
+        jj_la1[196] = jj_gen;
+        break label_109;
       }
       switch ((jj_ntk==-1)?jj_ntk():jj_ntk) {
       case DEF:
@@ -6190,7 +6362,7 @@ public class VRML97Parser extends Parser implements VRML97ParserType, VRML97Pars
         Route();
         break;
       default:
-        jj_la1[189] = jj_gen;
+        jj_la1[197] = jj_gen;
         jj_consume_token(-1);
         throw new ParseException();
       }
@@ -6513,74 +6685,12 @@ public class VRML97Parser extends Parser implements VRML97ParserType, VRML97Pars
     return retval;
   }
 
-  final private boolean jj_3_42() {
-    if (jj_scan_token(field)) return true;
-    if (jj_la == 0 && jj_scanpos == jj_lastpos) return false;
-    if (jj_scan_token(SFVec2f)) return true;
-    if (jj_la == 0 && jj_scanpos == jj_lastpos) return false;
-    return false;
-  }
-
-  final private boolean jj_3_27() {
-    if (jj_scan_token(eventOut)) return true;
-    if (jj_la == 0 && jj_scanpos == jj_lastpos) return false;
-    if (jj_scan_token(MFColor)) return true;
-    if (jj_la == 0 && jj_scanpos == jj_lastpos) return false;
-    if (jj_3R_102()) return true;
-    if (jj_la == 0 && jj_scanpos == jj_lastpos) return false;
-    return false;
-  }
-
-  final private boolean jj_3_12() {
-    if (jj_scan_token(eventIn)) return true;
-    if (jj_la == 0 && jj_scanpos == jj_lastpos) return false;
-    if (jj_scan_token(MFInt32)) return true;
-    if (jj_la == 0 && jj_scanpos == jj_lastpos) return false;
-    if (jj_3R_102()) return true;
-    if (jj_la == 0 && jj_scanpos == jj_lastpos) return false;
-    return false;
-  }
-
-  final private boolean jj_3_41() {
-    if (jj_scan_token(field)) return true;
-    if (jj_la == 0 && jj_scanpos == jj_lastpos) return false;
-    if (jj_scan_token(SFTime)) return true;
-    if (jj_la == 0 && jj_scanpos == jj_lastpos) return false;
-    return false;
-  }
-
-  final private boolean jj_3_11() {
-    if (jj_scan_token(eventIn)) return true;
-    if (jj_la == 0 && jj_scanpos == jj_lastpos) return false;
-    if (jj_scan_token(MFFloat)) return true;
-    if (jj_la == 0 && jj_scanpos == jj_lastpos) return false;
-    if (jj_3R_102()) return true;
-    if (jj_la == 0 && jj_scanpos == jj_lastpos) return false;
-    return false;
-  }
-
-  final private boolean jj_3_26() {
-    if (jj_scan_token(eventOut)) return true;
-    if (jj_la == 0 && jj_scanpos == jj_lastpos) return false;
-    if (jj_scan_token(SFVec3f)) return true;
-    if (jj_la == 0 && jj_scanpos == jj_lastpos) return false;
-    return false;
-  }
-
-  final private boolean jj_3_40() {
-    if (jj_scan_token(field)) return true;
-    if (jj_la == 0 && jj_scanpos == jj_lastpos) return false;
-    if (jj_scan_token(SFString)) return true;
-    if (jj_la == 0 && jj_scanpos == jj_lastpos) return false;
-    return false;
-  }
-
   final private boolean jj_3_10() {
     if (jj_scan_token(eventIn)) return true;
     if (jj_la == 0 && jj_scanpos == jj_lastpos) return false;
     if (jj_scan_token(MFColor)) return true;
     if (jj_la == 0 && jj_scanpos == jj_lastpos) return false;
-    if (jj_3R_102()) return true;
+    if (jj_3R_110()) return true;
     if (jj_la == 0 && jj_scanpos == jj_lastpos) return false;
     return false;
   }
@@ -6641,7 +6751,7 @@ public class VRML97Parser extends Parser implements VRML97ParserType, VRML97Pars
     return false;
   }
 
-  final private boolean jj_3R_102() {
+  final private boolean jj_3R_110() {
     if (jj_scan_token(ID)) return true;
     if (jj_la == 0 && jj_scanpos == jj_lastpos) return false;
     return false;
@@ -6740,7 +6850,7 @@ public class VRML97Parser extends Parser implements VRML97ParserType, VRML97Pars
     if (jj_la == 0 && jj_scanpos == jj_lastpos) return false;
     if (jj_scan_token(MFVec3f)) return true;
     if (jj_la == 0 && jj_scanpos == jj_lastpos) return false;
-    if (jj_3R_102()) return true;
+    if (jj_3R_110()) return true;
     if (jj_la == 0 && jj_scanpos == jj_lastpos) return false;
     return false;
   }
@@ -6766,7 +6876,7 @@ public class VRML97Parser extends Parser implements VRML97ParserType, VRML97Pars
     if (jj_la == 0 && jj_scanpos == jj_lastpos) return false;
     if (jj_scan_token(MFVec2f)) return true;
     if (jj_la == 0 && jj_scanpos == jj_lastpos) return false;
-    if (jj_3R_102()) return true;
+    if (jj_3R_110()) return true;
     if (jj_la == 0 && jj_scanpos == jj_lastpos) return false;
     return false;
   }
@@ -6784,7 +6894,7 @@ public class VRML97Parser extends Parser implements VRML97ParserType, VRML97Pars
     if (jj_la == 0 && jj_scanpos == jj_lastpos) return false;
     if (jj_scan_token(MFTime)) return true;
     if (jj_la == 0 && jj_scanpos == jj_lastpos) return false;
-    if (jj_3R_102()) return true;
+    if (jj_3R_110()) return true;
     if (jj_la == 0 && jj_scanpos == jj_lastpos) return false;
     return false;
   }
@@ -6794,7 +6904,7 @@ public class VRML97Parser extends Parser implements VRML97ParserType, VRML97Pars
     if (jj_la == 0 && jj_scanpos == jj_lastpos) return false;
     if (jj_scan_token(MFVec3f)) return true;
     if (jj_la == 0 && jj_scanpos == jj_lastpos) return false;
-    if (jj_3R_102()) return true;
+    if (jj_3R_110()) return true;
     if (jj_la == 0 && jj_scanpos == jj_lastpos) return false;
     return false;
   }
@@ -6812,7 +6922,7 @@ public class VRML97Parser extends Parser implements VRML97ParserType, VRML97Pars
     if (jj_la == 0 && jj_scanpos == jj_lastpos) return false;
     if (jj_scan_token(MFString)) return true;
     if (jj_la == 0 && jj_scanpos == jj_lastpos) return false;
-    if (jj_3R_102()) return true;
+    if (jj_3R_110()) return true;
     if (jj_la == 0 && jj_scanpos == jj_lastpos) return false;
     return false;
   }
@@ -6822,7 +6932,7 @@ public class VRML97Parser extends Parser implements VRML97ParserType, VRML97Pars
     if (jj_la == 0 && jj_scanpos == jj_lastpos) return false;
     if (jj_scan_token(MFVec2f)) return true;
     if (jj_la == 0 && jj_scanpos == jj_lastpos) return false;
-    if (jj_3R_102()) return true;
+    if (jj_3R_110()) return true;
     if (jj_la == 0 && jj_scanpos == jj_lastpos) return false;
     return false;
   }
@@ -6840,7 +6950,7 @@ public class VRML97Parser extends Parser implements VRML97ParserType, VRML97Pars
     if (jj_la == 0 && jj_scanpos == jj_lastpos) return false;
     if (jj_scan_token(MFRotation)) return true;
     if (jj_la == 0 && jj_scanpos == jj_lastpos) return false;
-    if (jj_3R_102()) return true;
+    if (jj_3R_110()) return true;
     if (jj_la == 0 && jj_scanpos == jj_lastpos) return false;
     return false;
   }
@@ -6850,7 +6960,7 @@ public class VRML97Parser extends Parser implements VRML97ParserType, VRML97Pars
     if (jj_la == 0 && jj_scanpos == jj_lastpos) return false;
     if (jj_scan_token(MFTime)) return true;
     if (jj_la == 0 && jj_scanpos == jj_lastpos) return false;
-    if (jj_3R_102()) return true;
+    if (jj_3R_110()) return true;
     if (jj_la == 0 && jj_scanpos == jj_lastpos) return false;
     return false;
   }
@@ -6868,7 +6978,7 @@ public class VRML97Parser extends Parser implements VRML97ParserType, VRML97Pars
     if (jj_la == 0 && jj_scanpos == jj_lastpos) return false;
     if (jj_scan_token(MFInt32)) return true;
     if (jj_la == 0 && jj_scanpos == jj_lastpos) return false;
-    if (jj_3R_102()) return true;
+    if (jj_3R_110()) return true;
     if (jj_la == 0 && jj_scanpos == jj_lastpos) return false;
     return false;
   }
@@ -6878,7 +6988,7 @@ public class VRML97Parser extends Parser implements VRML97ParserType, VRML97Pars
     if (jj_la == 0 && jj_scanpos == jj_lastpos) return false;
     if (jj_scan_token(MFString)) return true;
     if (jj_la == 0 && jj_scanpos == jj_lastpos) return false;
-    if (jj_3R_102()) return true;
+    if (jj_3R_110()) return true;
     if (jj_la == 0 && jj_scanpos == jj_lastpos) return false;
     return false;
   }
@@ -6896,7 +7006,7 @@ public class VRML97Parser extends Parser implements VRML97ParserType, VRML97Pars
     if (jj_la == 0 && jj_scanpos == jj_lastpos) return false;
     if (jj_scan_token(MFFloat)) return true;
     if (jj_la == 0 && jj_scanpos == jj_lastpos) return false;
-    if (jj_3R_102()) return true;
+    if (jj_3R_110()) return true;
     if (jj_la == 0 && jj_scanpos == jj_lastpos) return false;
     return false;
   }
@@ -6906,7 +7016,69 @@ public class VRML97Parser extends Parser implements VRML97ParserType, VRML97Pars
     if (jj_la == 0 && jj_scanpos == jj_lastpos) return false;
     if (jj_scan_token(MFRotation)) return true;
     if (jj_la == 0 && jj_scanpos == jj_lastpos) return false;
-    if (jj_3R_102()) return true;
+    if (jj_3R_110()) return true;
+    if (jj_la == 0 && jj_scanpos == jj_lastpos) return false;
+    return false;
+  }
+
+  final private boolean jj_3_42() {
+    if (jj_scan_token(field)) return true;
+    if (jj_la == 0 && jj_scanpos == jj_lastpos) return false;
+    if (jj_scan_token(SFVec2f)) return true;
+    if (jj_la == 0 && jj_scanpos == jj_lastpos) return false;
+    return false;
+  }
+
+  final private boolean jj_3_27() {
+    if (jj_scan_token(eventOut)) return true;
+    if (jj_la == 0 && jj_scanpos == jj_lastpos) return false;
+    if (jj_scan_token(MFColor)) return true;
+    if (jj_la == 0 && jj_scanpos == jj_lastpos) return false;
+    if (jj_3R_110()) return true;
+    if (jj_la == 0 && jj_scanpos == jj_lastpos) return false;
+    return false;
+  }
+
+  final private boolean jj_3_12() {
+    if (jj_scan_token(eventIn)) return true;
+    if (jj_la == 0 && jj_scanpos == jj_lastpos) return false;
+    if (jj_scan_token(MFInt32)) return true;
+    if (jj_la == 0 && jj_scanpos == jj_lastpos) return false;
+    if (jj_3R_110()) return true;
+    if (jj_la == 0 && jj_scanpos == jj_lastpos) return false;
+    return false;
+  }
+
+  final private boolean jj_3_41() {
+    if (jj_scan_token(field)) return true;
+    if (jj_la == 0 && jj_scanpos == jj_lastpos) return false;
+    if (jj_scan_token(SFTime)) return true;
+    if (jj_la == 0 && jj_scanpos == jj_lastpos) return false;
+    return false;
+  }
+
+  final private boolean jj_3_11() {
+    if (jj_scan_token(eventIn)) return true;
+    if (jj_la == 0 && jj_scanpos == jj_lastpos) return false;
+    if (jj_scan_token(MFFloat)) return true;
+    if (jj_la == 0 && jj_scanpos == jj_lastpos) return false;
+    if (jj_3R_110()) return true;
+    if (jj_la == 0 && jj_scanpos == jj_lastpos) return false;
+    return false;
+  }
+
+  final private boolean jj_3_26() {
+    if (jj_scan_token(eventOut)) return true;
+    if (jj_la == 0 && jj_scanpos == jj_lastpos) return false;
+    if (jj_scan_token(SFVec3f)) return true;
+    if (jj_la == 0 && jj_scanpos == jj_lastpos) return false;
+    return false;
+  }
+
+  final private boolean jj_3_40() {
+    if (jj_scan_token(field)) return true;
+    if (jj_la == 0 && jj_scanpos == jj_lastpos) return false;
+    if (jj_scan_token(SFString)) return true;
     if (jj_la == 0 && jj_scanpos == jj_lastpos) return false;
     return false;
   }
@@ -6920,15 +7092,15 @@ public class VRML97Parser extends Parser implements VRML97ParserType, VRML97Pars
   public boolean lookingAhead = false;
   private boolean jj_semLA;
   private int jj_gen;
-  final private int[] jj_la1 = new int[190];
-  final private int[] jj_la1_0 = {0x400,0x1800,0x0,0x0,0x400,0x2000,0x0,0x0,0x400,0x2000,0x0,0x0,0x400,0x2000,0x0,0x400,0x2000,0x0,0x400,0x2000,0x0,0x400,0x2000,0x0,0x400,0x2000,0x0,0x400,0x2000,0x0,0x8000,0x410000,0x410000,0x0,0x0,0x0,0x400000,0x0,0x0,0x0,0x410080,0x2000,0x418080,0x8000,0x4000,0xf800040,0xf800040,0x8000,0x18080,0x8000,0x18080,0x8000,0x0,0x8080,0xe0000000,0xe0000000,0x2800000,0x2800000,0x0,0x0,0xc000040,0xc000040,0x0,0x410080,0xc000040,0xc000040,0x0,0x0,0x0,0x0,0x0,0x0,0x0,0x0,0x0,0x0,0x0,0x0,0x8000,0x18080,0x8000,0x18080,0x8000,0x18080,0x0,0x0,0x0,0x0,0x0,0x0,0x0,0x0,0xc300040,0xc300040,0x800000,0x800000,0x8000,0x18080,0x8000,0x18080,0x8000,0x18080,0x8000,0x18080,0x0,0x0,0x8000,0x18080,0x8000,0x18080,0x0,0x0,0xc800000,0xc800000,0x2000,0x418080,0x8000,0x4000,0x0,0x0,0x0,0x0,0x800000,0x800000,0x0,0x0,0x0,0x0,0x0,0x0,0x0,0x0,0x0,0x0,0x0,0x0,0x8000,0x18080,0x8000,0x18080,0x0,0x0,0x0,0x0,0x0,0x0,0x0,0x0,0x800000,0x800000,0x8000,0x18080,0x0,0x0,0x0,0x0,0x0,0x0,0x0,0x8000,0x18080,0x8000,0x10018080,0x0,0x0,0x2000,0x418080,0x8000,0x4000,0x0,0x0,0x8000,0x18080,0x0,0x0,0x0,0x0,0x0,0x0,0x0,0xc000040,0xc000040,0x2000000,0x2000000,0x0,0x0,0x0,0x0,0x438000,0x438000,};
-  final private int[] jj_la1_1 = {0x0,0x0,0x0,0x0,0x0,0x0,0x0,0x0,0x0,0x0,0x0,0x0,0x0,0x0,0x0,0x0,0x0,0x0,0x0,0x0,0x0,0x0,0x0,0x0,0x0,0x0,0x0,0x0,0x0,0x0,0x0,0x2110021,0x2110021,0x0,0x2000000,0x0,0x110000,0x1,0x4040000,0x20,0x2110021,0x0,0x2110021,0x0,0x0,0x0,0x0,0x0,0x0,0x0,0x0,0x0,0x0,0x0,0x0,0x0,0x1e,0x1e,0xffc0,0xffc0,0x20000,0x20000,0x80000,0x2110021,0x600000,0x600000,0x0,0x0,0x78000000,0x78000000,0x0,0x0,0x68000000,0x68000000,0x0,0x0,0x1000000,0x1000000,0x0,0x0,0x0,0x800000,0x0,0x0,0x9000000,0x9000000,0x0,0x0,0x1000000,0x1000000,0x80000,0x80000,0x0,0x0,0x0,0x0,0x0,0x80000000,0x0,0x0,0x0,0x800000,0x0,0x0,0x1000000,0x1000000,0x0,0x80000000,0x0,0x800000,0x1000000,0x1000000,0x0,0x0,0x0,0x2110021,0x0,0x0,0x0,0x0,0x0,0x0,0x1a,0x1a,0x0,0x0,0x0,0x0,0x0,0x0,0x0,0x0,0x0,0x0,0x1000000,0x1000000,0x0,0x800000,0x0,0x80000000,0x1000000,0x1000000,0x0,0x0,0x80000,0x80000,0x0,0x0,0x0,0x0,0x0,0x1,0x0,0x0,0x0,0x0,0x0,0x1000000,0x1000000,0x0,0x4040000,0x0,0x0,0x0,0x0,0x0,0x2110021,0x0,0x0,0x0,0x0,0x0,0x0,0x0,0x0,0x0,0x0,0x1a,0x1a,0x0,0x0,0x0,0x0,0x0,0x80000,0x80000,0x0,0x0,0x2110021,0x2110021,};
-  final private int[] jj_la1_2 = {0x0,0x0,0x0,0x0,0x0,0x0,0x0,0x0,0x0,0x0,0x0,0x0,0x0,0x0,0x0,0x0,0x0,0x0,0x0,0x0,0x0,0x0,0x0,0x0,0x0,0x0,0x0,0x0,0x0,0x0,0x0,0x4082,0x4082,0x80,0x2,0x4000,0x0,0x0,0x20080010,0x0,0x4082,0x0,0x4082,0x0,0x0,0x0,0x0,0x0,0x0,0x0,0x0,0x0,0x0,0x0,0x0,0x0,0x0,0x0,0x0,0x0,0x0,0x0,0x0,0x4082,0x0,0x0,0xc,0xc,0x0,0x0,0xc,0xc,0x60,0x60,0x3f00,0x3f00,0x78000,0x78000,0x0,0x0,0x0,0x0,0x0,0x0,0x1ff00000,0x1ff00000,0xc1500000,0xc1500000,0x0,0x0,0x0,0x0,0x0,0x0,0x0,0x0,0x0,0x0,0x0,0x0,0x0,0x0,0x0,0x0,0x1f00000,0x1f00000,0x0,0x0,0x0,0x0,0x200000,0x200000,0x0,0x0,0x0,0x4082,0x0,0x0,0x0,0x0,0x20000,0x20000,0x0,0x0,0x0,0x0,0xc,0xc,0xc,0xc,0x0,0x0,0x3400,0x3400,0x38040,0x38040,0x0,0x0,0x0,0x0,0x0,0x0,0xc,0xc,0x400,0x400,0xc,0xc,0x0,0x0,0x0,0x0,0x50000,0x50000,0x40,0x3400,0x3400,0x78040,0x78040,0x0,0x20080010,0x0,0x0,0x0,0x0,0x0,0x4082,0x0,0x0,0x0,0x0,0x0,0x0,0x0,0x0,0x0,0x0,0x400,0x400,0x400,0x0,0x0,0x0,0x0,0x400,0x400,0x0,0x0,0x4082,0x4082,};
-  final private int[] jj_la1_3 = {0x0,0x0,0x0,0x0,0x0,0x0,0x0,0x0,0x0,0x0,0x0,0x0,0x0,0x0,0x0,0x0,0x0,0x0,0x0,0x0,0x0,0x0,0x0,0x0,0x0,0x0,0x0,0x0,0x0,0x0,0x0,0x30004004,0x30004004,0x0,0x0,0x0,0x30004000,0x0,0x8040000,0x4,0x30004004,0x0,0x30004004,0x0,0x0,0x0,0x0,0x0,0x0,0x0,0x0,0x0,0x8000,0x8000,0x0,0x0,0x0,0x0,0x0,0x0,0x0,0x0,0x0,0x30004004,0x0,0x0,0x0,0x0,0x0,0x0,0x0,0x0,0x0,0x0,0x0,0x0,0x0,0x0,0x0,0x0,0x0,0x0,0x0,0x0,0x300000,0x300000,0x4000003,0x4000003,0x18,0x18,0x3fc0,0x3fc0,0x0,0x0,0x30000,0x30000,0x0,0x0,0x0,0x0,0x0,0x0,0x0,0x0,0x7f80000,0x7f80000,0x0,0x0,0x0,0x0,0xc80000,0xc80000,0x0,0x0,0x0,0x30004004,0x0,0x0,0xc0000000,0xc0000000,0x0,0x0,0x30000,0x30000,0x0,0x0,0x0,0x0,0x0,0x0,0x30000,0x30000,0x0,0x0,0x0,0x0,0x0,0x0,0x0,0x0,0x80000,0x80000,0x0,0x0,0x40000000,0x40000000,0x0,0x0,0x0,0x0,0x0,0x0,0x0,0x0,0x0,0x0,0x0,0x0,0x0,0x0,0x8040000,0x0,0x0,0x0,0x0,0x0,0x30004004,0x0,0x0,0x0,0x0,0x0,0x20,0x0,0x0,0x40000000,0x40000000,0x0,0x0,0x0,0x40000000,0x40000000,0x0,0x0,0x40000000,0x40000000,0x0,0x0,0x30004004,0x30004004,};
-  final private int[] jj_la1_4 = {0x0,0x0,0x0,0x0,0x0,0x0,0x0,0x0,0x0,0x0,0x0,0x0,0x0,0x0,0x0,0x0,0x0,0x0,0x0,0x0,0x0,0x0,0x0,0x0,0x0,0x0,0x0,0x0,0x0,0x0,0x0,0x78930200,0x78930200,0x10100000,0x28030000,0x800000,0x0,0x0,0x4000000,0x200,0x78930200,0x0,0x78930200,0x0,0x0,0x0,0x0,0x0,0x2,0x0,0x0,0x0,0x40080,0x40080,0x0,0x0,0x0,0x0,0x0,0x0,0x0,0x0,0x0,0x78930200,0x0,0x0,0x0,0x0,0x0,0x0,0x0,0x0,0x0,0x0,0x0,0x0,0x0,0x0,0x0,0x4000,0x0,0x0,0x0,0x0,0x0,0x0,0x0,0x0,0x0,0x0,0x0,0x0,0x0,0x0,0x0,0x0,0x0,0x0,0x0,0x4000,0x0,0x0,0x0,0x0,0x0,0x0,0x0,0x0,0x0,0x0,0x0,0x0,0x0,0x0,0x0,0x78930200,0x0,0x0,0x1,0x1,0x7c,0x7c,0x100,0x100,0x3d00,0x3d00,0x0,0x0,0x0,0x0,0x80000,0x80000,0x600000,0x600000,0x3000000,0x3000000,0x0,0x0,0x0,0x0,0x0,0x0,0x0,0x0,0x0,0x0,0x0,0x0,0x80000000,0x80000000,0x0,0x0,0x1000000,0x1000000,0x0,0x0,0x0,0x3000000,0x3000000,0x0,0x4000000,0x0,0x0,0x0,0x0,0x0,0x78930200,0x0,0x0,0x0,0x0,0x0,0x0,0x0,0x0,0x0,0x0,0x0,0x0,0x0,0x0,0x0,0x0,0x0,0x0,0x0,0x0,0x0,0x78930200,0x78930200,};
-  final private int[] jj_la1_5 = {0x0,0x0,0x0,0x0,0x0,0x0,0x0,0x0,0x0,0x0,0x0,0x0,0x0,0x0,0x0,0x0,0x0,0x0,0x0,0x0,0x0,0x0,0x0,0x0,0x0,0x0,0x0,0x0,0x0,0x0,0x0,0x800000,0x800000,0x0,0x0,0x0,0x0,0x800000,0x80000000,0x0,0x800000,0x0,0x800000,0x0,0x0,0x0,0x0,0x0,0x0,0x0,0x0,0x0,0x0,0x0,0x0,0x0,0x0,0x0,0x0,0x0,0x0,0x0,0x0,0x800000,0x0,0x0,0x0,0x0,0x0,0x0,0x0,0x0,0x0,0x0,0x0,0x0,0x0,0x0,0x0,0x0,0x0,0x0,0x0,0x0,0x0,0x0,0x0,0x0,0x0,0x0,0x0,0x0,0x0,0x0,0x0,0x0,0x0,0x0,0x0,0x0,0x0,0x0,0x0,0x0,0x0,0x0,0x0,0x0,0x0,0x0,0x0,0x0,0x0,0x0,0x0,0x800000,0x0,0x0,0x0,0x0,0x0,0x0,0x0,0x0,0x0,0x0,0x0,0x0,0x0,0x0,0x0,0x0,0x0,0x0,0x0,0x0,0x0,0x0,0x0,0x0,0x0,0x0,0x0,0x0,0x0,0x0,0x0,0x0,0x1,0xf,0x0,0x0,0x7f000000,0x7f000000,0x0,0x0,0x0,0x0,0x0,0x0,0x80000000,0x0,0x0,0x0,0x0,0x0,0x800000,0x0,0x0,0x0,0x0,0x0,0x0,0x0,0x0,0x0,0x0,0x0,0x0,0x0,0x0,0x0,0x0,0x0,0x0,0x0,0x0,0x0,0x800000,0x800000,};
-  final private int[] jj_la1_6 = {0x0,0x0,0x0,0x0,0x0,0x0,0x0,0x0,0x0,0x0,0x0,0x0,0x0,0x0,0x0,0x0,0x0,0x0,0x0,0x0,0x0,0x0,0x0,0x0,0x0,0x0,0x0,0x0,0x0,0x0,0x0,0xc21a0093,0xc21a0093,0x40080001,0x0,0x2,0x100080,0x10,0x400,0x82000000,0xc21a0093,0x0,0xc21a0093,0x0,0x0,0x0,0x0,0x0,0x0,0x0,0x10000,0x0,0x0,0x0,0x0,0x0,0x0,0x0,0x0,0x0,0x0,0x0,0x0,0xc21a0093,0x0,0x0,0x0,0x0,0x0,0x0,0x0,0x0,0x0,0x0,0x0,0x0,0x0,0x0,0x0,0x0,0x0,0x0,0x0,0x8000,0x0,0x0,0x8400000,0x8400000,0x0,0x0,0x0,0x0,0x0,0x0,0x0,0x0,0x0,0x0,0x0,0x0,0x0,0x0,0x0,0x8000,0x0,0x0,0x0,0x0,0x0,0x0,0x0,0x0,0x0,0x0,0x0,0xc21a0093,0x0,0x0,0x0,0x0,0x0,0x0,0x0,0x0,0x0,0x0,0x0,0x0,0x0,0x0,0x0,0x0,0x0,0x0,0x0,0x0,0x0,0x0,0x0,0x0,0x0,0x0,0x0,0x0,0x0,0x0,0x0,0x0,0x0,0x0,0x0,0x0,0x0,0x0,0x0,0x0,0x0,0xc,0xc,0x0,0x400,0x0,0x0,0x60,0x60,0x0,0xc21a0093,0x0,0x0,0x300,0x300,0x0,0x0,0x7800,0x7800,0x1600000,0x1600000,0x40000,0x40000,0x0,0x1e00000,0x1e00000,0x3c000000,0x3c000000,0x0,0x0,0x0,0x0,0xc21a0093,0xc21a0093,};
-  final private int[] jj_la1_7 = {0x0,0x0,0x24,0x24,0x0,0x24,0x24,0x24,0x0,0x24,0x44,0x44,0x0,0x44,0x24,0x0,0x24,0x24,0x0,0x24,0x24,0x0,0x24,0x24,0x0,0x24,0x10,0x0,0x10,0x44,0x0,0x0,0x0,0x0,0x0,0x0,0x0,0x0,0x0,0x0,0x0,0x0,0x0,0x0,0x0,0x0,0x0,0x0,0x0,0x0,0x0,0x0,0x0,0x0,0x0,0x0,0x0,0x0,0x0,0x0,0x0,0x0,0x0,0x0,0x0,0x0,0x0,0x0,0x0,0x0,0x0,0x0,0x0,0x0,0x0,0x0,0x0,0x0,0x0,0x0,0x0,0x0,0x0,0x0,0x0,0x0,0x0,0x0,0x0,0x0,0x0,0x0,0x0,0x0,0x0,0x0,0x0,0x0,0x0,0x0,0x0,0x0,0x0,0x0,0x0,0x0,0x0,0x0,0x0,0x0,0x0,0x0,0x0,0x0,0x0,0x0,0x0,0x0,0x0,0x0,0x0,0x0,0x0,0x0,0x0,0x0,0x0,0x0,0x0,0x0,0x0,0x0,0x0,0x0,0x0,0x0,0x0,0x0,0x0,0x0,0x0,0x0,0x0,0x0,0x0,0x0,0x0,0x0,0x0,0x0,0x0,0x0,0x0,0x0,0x0,0x0,0x0,0x0,0x0,0x0,0x0,0x0,0x0,0x0,0x0,0x0,0x0,0x0,0x0,0x0,0x0,0x0,0x0,0x0,0x0,0x0,0x0,0x0,0x0,0x0,0x0,0x0,0x0,0x0,0x0,0x0,0x3,0x3,0x0,0x0,};
+  final private int[] jj_la1 = new int[198];
+  final private int[] jj_la1_0 = {0x400,0x1800,0x0,0x0,0x400,0x2000,0x0,0x0,0x400,0x2000,0x0,0x0,0x400,0x2000,0x0,0x400,0x2000,0x0,0x400,0x2000,0x0,0x400,0x2000,0x0,0x400,0x2000,0x0,0x400,0x2000,0x0,0x8000,0x410000,0x410000,0x0,0x0,0x0,0x400000,0x0,0x0,0x0,0x410080,0x2000,0x418080,0x8000,0x4000,0x2000,0x418080,0x8000,0x4000,0x2000,0x418080,0x8000,0x4000,0xf800040,0xf800040,0x8000,0x18080,0x8000,0x18080,0x8000,0x0,0x8080,0xe0000000,0xe0000000,0x2800000,0x2800000,0x0,0x0,0xc000040,0xc000040,0x0,0x410080,0xc000040,0xc000040,0x0,0x0,0x0,0x0,0x0,0x0,0x0,0x0,0x0,0x0,0x0,0x0,0x8000,0x18080,0x8000,0x18080,0x8000,0x18080,0x0,0x0,0x0,0x0,0x0,0x0,0x0,0x0,0xc300040,0xc300040,0x800000,0x800000,0x8000,0x18080,0x8000,0x18080,0x8000,0x18080,0x8000,0x18080,0x0,0x0,0x8000,0x18080,0x8000,0x18080,0x0,0x0,0xc800000,0xc800000,0x2000,0x418080,0x8000,0x4000,0x0,0x0,0x0,0x0,0x800000,0x800000,0x0,0x0,0x0,0x0,0x0,0x0,0x0,0x0,0x0,0x0,0x0,0x0,0x8000,0x18080,0x8000,0x18080,0x0,0x0,0x0,0x0,0x0,0x0,0x0,0x0,0x800000,0x800000,0x8000,0x18080,0x0,0x0,0x0,0x0,0x0,0x0,0x0,0x8000,0x18080,0x8000,0x10018080,0x0,0x0,0x2000,0x418080,0x8000,0x4000,0x0,0x0,0x8000,0x18080,0x0,0x0,0x0,0x0,0x0,0x0,0x0,0xc300040,0xc300040,0x2000000,0x2000000,0x0,0x0,0x0,0x0,0x438000,0x438000,};
+  final private int[] jj_la1_1 = {0x0,0x0,0x0,0x0,0x0,0x0,0x0,0x0,0x0,0x0,0x0,0x0,0x0,0x0,0x0,0x0,0x0,0x0,0x0,0x0,0x0,0x0,0x0,0x0,0x0,0x0,0x0,0x0,0x0,0x0,0x0,0x2110021,0x2110021,0x0,0x2000000,0x0,0x110000,0x1,0x4040000,0x20,0x2110021,0x0,0x2110021,0x0,0x0,0x0,0x2110021,0x0,0x0,0x0,0x2110021,0x0,0x0,0x0,0x0,0x0,0x0,0x0,0x0,0x0,0x0,0x0,0x0,0x0,0x1e,0x1e,0xffc0,0xffc0,0x20000,0x20000,0x80000,0x2110021,0x600000,0x600000,0x0,0x0,0x78000000,0x78000000,0x0,0x0,0x68000000,0x68000000,0x0,0x0,0x1000000,0x1000000,0x0,0x0,0x0,0x800000,0x0,0x0,0x9000000,0x9000000,0x0,0x0,0x1000000,0x1000000,0x80000,0x80000,0x0,0x0,0x0,0x0,0x0,0x80000000,0x0,0x0,0x0,0x800000,0x0,0x0,0x1000000,0x1000000,0x0,0x80000000,0x0,0x800000,0x1000000,0x1000000,0x0,0x0,0x0,0x2110021,0x0,0x0,0x0,0x0,0x0,0x0,0x1a,0x1a,0x0,0x0,0x0,0x0,0x0,0x0,0x0,0x0,0x0,0x0,0x1000000,0x1000000,0x0,0x800000,0x0,0x80000000,0x1000000,0x1000000,0x0,0x0,0x80000,0x80000,0x0,0x0,0x0,0x0,0x0,0x1,0x0,0x0,0x0,0x0,0x0,0x1000000,0x1000000,0x0,0x4040000,0x0,0x0,0x0,0x0,0x0,0x2110021,0x0,0x0,0x0,0x0,0x0,0x0,0x0,0x0,0x0,0x0,0x1a,0x1a,0x0,0x0,0x0,0x0,0x0,0x80000,0x80000,0x0,0x0,0x2110021,0x2110021,};
+  final private int[] jj_la1_2 = {0x0,0x0,0x0,0x0,0x0,0x0,0x0,0x0,0x0,0x0,0x0,0x0,0x0,0x0,0x0,0x0,0x0,0x0,0x0,0x0,0x0,0x0,0x0,0x0,0x0,0x0,0x0,0x0,0x0,0x0,0x0,0x4082,0x4082,0x80,0x2,0x4000,0x0,0x0,0x20080010,0x0,0x4082,0x0,0x4082,0x0,0x0,0x0,0x4082,0x0,0x0,0x0,0x4082,0x0,0x0,0x0,0x0,0x0,0x0,0x0,0x0,0x0,0x0,0x0,0x0,0x0,0x0,0x0,0x0,0x0,0x0,0x0,0x0,0x4082,0x0,0x0,0xc,0xc,0x0,0x0,0xc,0xc,0x60,0x60,0x3f00,0x3f00,0x78000,0x78000,0x0,0x0,0x0,0x0,0x0,0x0,0x1ff00000,0x1ff00000,0xc1500000,0xc1500000,0x0,0x0,0x0,0x0,0x0,0x0,0x0,0x0,0x0,0x0,0x0,0x0,0x0,0x0,0x0,0x0,0x1f00000,0x1f00000,0x0,0x0,0x0,0x0,0x200000,0x200000,0x0,0x0,0x0,0x4082,0x0,0x0,0x0,0x0,0x20000,0x20000,0x0,0x0,0x0,0x0,0xc,0xc,0xc,0xc,0x0,0x0,0x3400,0x3400,0x38040,0x38040,0x0,0x0,0x0,0x0,0x0,0x0,0xc,0xc,0x400,0x400,0xc,0xc,0x0,0x0,0x0,0x0,0x50000,0x50000,0x40,0x3400,0x3400,0x78040,0x78040,0x0,0x20080010,0x0,0x0,0x0,0x0,0x0,0x4082,0x0,0x0,0x0,0x0,0x0,0x0,0x0,0x0,0x0,0x0,0x400,0x400,0x400,0x0,0x0,0x0,0x0,0x400,0x400,0x0,0x0,0x4082,0x4082,};
+  final private int[] jj_la1_3 = {0x0,0x0,0x0,0x0,0x0,0x0,0x0,0x0,0x0,0x0,0x0,0x0,0x0,0x0,0x0,0x0,0x0,0x0,0x0,0x0,0x0,0x0,0x0,0x0,0x0,0x0,0x0,0x0,0x0,0x0,0x0,0x30004004,0x30004004,0x0,0x0,0x0,0x30004000,0x0,0x8040000,0x4,0x30004004,0x0,0x30004004,0x0,0x0,0x0,0x30004004,0x0,0x0,0x0,0x30004004,0x0,0x0,0x0,0x0,0x0,0x0,0x0,0x0,0x0,0x8000,0x8000,0x0,0x0,0x0,0x0,0x0,0x0,0x0,0x0,0x0,0x30004004,0x0,0x0,0x0,0x0,0x0,0x0,0x0,0x0,0x0,0x0,0x0,0x0,0x0,0x0,0x0,0x0,0x0,0x0,0x0,0x0,0x300000,0x300000,0x4000003,0x4000003,0x18,0x18,0x3fc0,0x3fc0,0x0,0x0,0x30000,0x30000,0x0,0x0,0x0,0x0,0x0,0x0,0x0,0x0,0x7f80000,0x7f80000,0x0,0x0,0x0,0x0,0xc80000,0xc80000,0x0,0x0,0x0,0x30004004,0x0,0x0,0xc0000000,0xc0000000,0x0,0x0,0x30000,0x30000,0x0,0x0,0x0,0x0,0x0,0x0,0x30000,0x30000,0x0,0x0,0x0,0x0,0x0,0x0,0x0,0x0,0x80000,0x80000,0x0,0x0,0x40000000,0x40000000,0x0,0x0,0x0,0x0,0x0,0x0,0x0,0x0,0x0,0x0,0x0,0x0,0x0,0x0,0x8040000,0x0,0x0,0x0,0x0,0x0,0x30004004,0x0,0x0,0x0,0x0,0x0,0x20,0x0,0x0,0x40000000,0x40000000,0x0,0x0,0x0,0x40000000,0x40000000,0x0,0x0,0x40000000,0x40000000,0x0,0x0,0x30004004,0x30004004,};
+  final private int[] jj_la1_4 = {0x0,0x0,0x0,0x0,0x0,0x0,0x0,0x0,0x0,0x0,0x0,0x0,0x0,0x0,0x0,0x0,0x0,0x0,0x0,0x0,0x0,0x0,0x0,0x0,0x0,0x0,0x0,0x0,0x0,0x0,0x0,0x78930200,0x78930200,0x10100000,0x28030000,0x800000,0x0,0x0,0x4000000,0x200,0x78930200,0x0,0x78930200,0x0,0x0,0x0,0x78930200,0x0,0x0,0x0,0x78930200,0x0,0x0,0x0,0x0,0x0,0x2,0x0,0x0,0x0,0x40080,0x40080,0x0,0x0,0x0,0x0,0x0,0x0,0x0,0x0,0x0,0x78930200,0x0,0x0,0x0,0x0,0x0,0x0,0x0,0x0,0x0,0x0,0x0,0x0,0x0,0x0,0x0,0x4000,0x0,0x0,0x0,0x0,0x0,0x0,0x0,0x0,0x0,0x0,0x0,0x0,0x0,0x0,0x0,0x0,0x0,0x0,0x0,0x4000,0x0,0x0,0x0,0x0,0x0,0x0,0x0,0x0,0x0,0x0,0x0,0x0,0x0,0x0,0x0,0x78930200,0x0,0x0,0x1,0x1,0x7c,0x7c,0x100,0x100,0x3d00,0x3d00,0x0,0x0,0x0,0x0,0x80000,0x80000,0x600000,0x600000,0x3000000,0x3000000,0x0,0x0,0x0,0x0,0x0,0x0,0x0,0x0,0x0,0x0,0x0,0x0,0x80000000,0x80000000,0x0,0x0,0x1000000,0x1000000,0x0,0x0,0x0,0x3000000,0x3000000,0x0,0x4000000,0x0,0x0,0x0,0x0,0x0,0x78930200,0x0,0x0,0x0,0x0,0x0,0x0,0x0,0x0,0x0,0x0,0x0,0x0,0x0,0x0,0x0,0x0,0x0,0x0,0x0,0x0,0x0,0x78930200,0x78930200,};
+  final private int[] jj_la1_5 = {0x0,0x0,0x0,0x0,0x0,0x0,0x0,0x0,0x0,0x0,0x0,0x0,0x0,0x0,0x0,0x0,0x0,0x0,0x0,0x0,0x0,0x0,0x0,0x0,0x0,0x0,0x0,0x0,0x0,0x0,0x0,0x800000,0x800000,0x0,0x0,0x0,0x0,0x800000,0x80000000,0x0,0x800000,0x0,0x800000,0x0,0x0,0x0,0x800000,0x0,0x0,0x0,0x800000,0x0,0x0,0x0,0x0,0x0,0x0,0x0,0x0,0x0,0x0,0x0,0x0,0x0,0x0,0x0,0x0,0x0,0x0,0x0,0x0,0x800000,0x0,0x0,0x0,0x0,0x0,0x0,0x0,0x0,0x0,0x0,0x0,0x0,0x0,0x0,0x0,0x0,0x0,0x0,0x0,0x0,0x0,0x0,0x0,0x0,0x0,0x0,0x0,0x0,0x0,0x0,0x0,0x0,0x0,0x0,0x0,0x0,0x0,0x0,0x0,0x0,0x0,0x0,0x0,0x0,0x0,0x0,0x0,0x0,0x0,0x0,0x0,0x800000,0x0,0x0,0x0,0x0,0x0,0x0,0x0,0x0,0x0,0x0,0x0,0x0,0x0,0x0,0x0,0x0,0x0,0x0,0x0,0x0,0x0,0x0,0x0,0x0,0x0,0x0,0x0,0x0,0x0,0x0,0x0,0x0,0x1,0xf,0x0,0x0,0x7f000000,0x7f000000,0x0,0x0,0x0,0x0,0x0,0x0,0x80000000,0x0,0x0,0x0,0x0,0x0,0x800000,0x0,0x0,0x0,0x0,0x0,0x0,0x0,0x0,0x0,0x0,0x0,0x0,0x0,0x0,0x0,0x0,0x0,0x0,0x0,0x0,0x0,0x800000,0x800000,};
+  final private int[] jj_la1_6 = {0x0,0x0,0x0,0x0,0x0,0x0,0x0,0x0,0x0,0x0,0x0,0x0,0x0,0x0,0x0,0x0,0x0,0x0,0x0,0x0,0x0,0x0,0x0,0x0,0x0,0x0,0x0,0x0,0x0,0x0,0x0,0xc21a0093,0xc21a0093,0x40080001,0x0,0x2,0x100080,0x10,0x400,0x82000000,0xc21a0093,0x0,0xc21a0093,0x0,0x0,0x0,0xc21a0093,0x0,0x0,0x0,0xc21a0093,0x0,0x0,0x0,0x0,0x0,0x0,0x0,0x10000,0x0,0x0,0x0,0x0,0x0,0x0,0x0,0x0,0x0,0x0,0x0,0x0,0xc21a0093,0x0,0x0,0x0,0x0,0x0,0x0,0x0,0x0,0x0,0x0,0x0,0x0,0x0,0x0,0x0,0x0,0x0,0x0,0x0,0x8000,0x0,0x0,0x8400000,0x8400000,0x0,0x0,0x0,0x0,0x0,0x0,0x0,0x0,0x0,0x0,0x0,0x0,0x0,0x0,0x0,0x8000,0x0,0x0,0x0,0x0,0x0,0x0,0x0,0x0,0x0,0x0,0x0,0xc21a0093,0x0,0x0,0x0,0x0,0x0,0x0,0x0,0x0,0x0,0x0,0x0,0x0,0x0,0x0,0x0,0x0,0x0,0x0,0x0,0x0,0x0,0x0,0x0,0x0,0x0,0x0,0x0,0x0,0x0,0x0,0x0,0x0,0x0,0x0,0x0,0x0,0x0,0x0,0x0,0x0,0x0,0xc,0xc,0x0,0x400,0x0,0x0,0x60,0x60,0x0,0xc21a0093,0x0,0x0,0x300,0x300,0x0,0x0,0x7800,0x7800,0x1600000,0x1600000,0x40000,0x40000,0x0,0x1e00000,0x1e00000,0x3c000000,0x3c000000,0x0,0x0,0x0,0x0,0xc21a0093,0xc21a0093,};
+  final private int[] jj_la1_7 = {0x0,0x0,0x24,0x24,0x0,0x24,0x24,0x24,0x0,0x24,0x44,0x44,0x0,0x44,0x24,0x0,0x24,0x24,0x0,0x24,0x24,0x0,0x24,0x24,0x0,0x24,0x10,0x0,0x10,0x44,0x0,0x0,0x0,0x0,0x0,0x0,0x0,0x0,0x0,0x0,0x0,0x0,0x0,0x0,0x0,0x0,0x0,0x0,0x0,0x0,0x0,0x0,0x0,0x0,0x0,0x0,0x0,0x0,0x0,0x0,0x0,0x0,0x0,0x0,0x0,0x0,0x0,0x0,0x0,0x0,0x0,0x0,0x0,0x0,0x0,0x0,0x0,0x0,0x0,0x0,0x0,0x0,0x0,0x0,0x0,0x0,0x0,0x0,0x0,0x0,0x0,0x0,0x0,0x0,0x0,0x0,0x0,0x0,0x0,0x0,0x0,0x0,0x0,0x0,0x0,0x0,0x0,0x0,0x0,0x0,0x0,0x0,0x0,0x0,0x0,0x0,0x0,0x0,0x0,0x0,0x0,0x0,0x0,0x0,0x0,0x0,0x0,0x0,0x0,0x0,0x0,0x0,0x0,0x0,0x0,0x0,0x0,0x0,0x0,0x0,0x0,0x0,0x0,0x0,0x0,0x0,0x0,0x0,0x0,0x0,0x0,0x0,0x0,0x0,0x0,0x0,0x0,0x0,0x0,0x0,0x0,0x0,0x0,0x0,0x0,0x0,0x0,0x0,0x0,0x0,0x0,0x0,0x0,0x0,0x0,0x0,0x0,0x0,0x0,0x0,0x0,0x0,0x0,0x0,0x0,0x0,0x0,0x0,0x0,0x0,0x0,0x0,0x0,0x0,0x3,0x3,0x0,0x0,};
   final private JJCalls[] jj_2_rtns = new JJCalls[45];
   private boolean jj_rescan = false;
   private int jj_gc = 0;
@@ -6939,7 +7111,7 @@ public class VRML97Parser extends Parser implements VRML97ParserType, VRML97Pars
     token = new Token();
     jj_ntk = -1;
     jj_gen = 0;
-    for (int i = 0; i < 190; i++) jj_la1[i] = -1;
+    for (int i = 0; i < 198; i++) jj_la1[i] = -1;
     for (int i = 0; i < jj_2_rtns.length; i++) jj_2_rtns[i] = new JJCalls();
   }
 
@@ -6949,7 +7121,7 @@ public class VRML97Parser extends Parser implements VRML97ParserType, VRML97Pars
     token = new Token();
     jj_ntk = -1;
     jj_gen = 0;
-    for (int i = 0; i < 190; i++) jj_la1[i] = -1;
+    for (int i = 0; i < 198; i++) jj_la1[i] = -1;
     for (int i = 0; i < jj_2_rtns.length; i++) jj_2_rtns[i] = new JJCalls();
   }
 
@@ -6959,7 +7131,7 @@ public class VRML97Parser extends Parser implements VRML97ParserType, VRML97Pars
     token = new Token();
     jj_ntk = -1;
     jj_gen = 0;
-    for (int i = 0; i < 190; i++) jj_la1[i] = -1;
+    for (int i = 0; i < 198; i++) jj_la1[i] = -1;
     for (int i = 0; i < jj_2_rtns.length; i++) jj_2_rtns[i] = new JJCalls();
   }
 
@@ -6969,7 +7141,7 @@ public class VRML97Parser extends Parser implements VRML97ParserType, VRML97Pars
     token = new Token();
     jj_ntk = -1;
     jj_gen = 0;
-    for (int i = 0; i < 190; i++) jj_la1[i] = -1;
+    for (int i = 0; i < 198; i++) jj_la1[i] = -1;
     for (int i = 0; i < jj_2_rtns.length; i++) jj_2_rtns[i] = new JJCalls();
   }
 
@@ -6978,7 +7150,7 @@ public class VRML97Parser extends Parser implements VRML97ParserType, VRML97Pars
     token = new Token();
     jj_ntk = -1;
     jj_gen = 0;
-    for (int i = 0; i < 190; i++) jj_la1[i] = -1;
+    for (int i = 0; i < 198; i++) jj_la1[i] = -1;
     for (int i = 0; i < jj_2_rtns.length; i++) jj_2_rtns[i] = new JJCalls();
   }
 
@@ -6987,7 +7159,7 @@ public class VRML97Parser extends Parser implements VRML97ParserType, VRML97Pars
     token = new Token();
     jj_ntk = -1;
     jj_gen = 0;
-    for (int i = 0; i < 190; i++) jj_la1[i] = -1;
+    for (int i = 0; i < 198; i++) jj_la1[i] = -1;
     for (int i = 0; i < jj_2_rtns.length; i++) jj_2_rtns[i] = new JJCalls();
   }
 
@@ -7102,7 +7274,7 @@ public class VRML97Parser extends Parser implements VRML97ParserType, VRML97Pars
       la1tokens[jj_kind] = true;
       jj_kind = -1;
     }
-    for (int i = 0; i < 190; i++) {
+    for (int i = 0; i < 198; i++) {
       if (jj_la1[i] == jj_gen) {
         for (int j = 0; j < 32; j++) {
           if ((jj_la1_0[i] & (1<<j)) != 0) {

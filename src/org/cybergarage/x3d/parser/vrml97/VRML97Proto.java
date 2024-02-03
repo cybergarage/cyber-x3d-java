@@ -6,6 +6,12 @@
 *
 *	File : VRML97Proto.java
 *
+*	Revision;
+*
+*	12/11/03
+*		- Thuan Truong <tqthuan@tma.com.vn>
+*		- Fixed getString() using VRML97Preprocessor.number2String.
+*
 ******************************************************************/
 
 package org.cybergarage.x3d.parser.vrml97;
@@ -110,7 +116,9 @@ public class VRML97Proto extends LinkedListNode {
 		while (stream.nextToken() != StreamTokenizer.TT_EOF) {
 			switch (stream.ttype) {
 			case StreamTokenizer.TT_NUMBER:
-				protoString.append(stream.nval + " ");
+				double dvalue = stream.nval; 
+				String valStr = VRML97Preprocessor.number2String(dvalue);
+				protoString.append(valStr + " ");
 				nToken++;
 				break;
 			case StreamTokenizer.TT_WORD:

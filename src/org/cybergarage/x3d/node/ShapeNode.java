@@ -10,6 +10,9 @@
 *
 *	12/02/02
 *		- Changed the super class from Node to BoundedNode.
+*	12/05/03
+*		- shen shenyang@163.net <shenyang@163.net>
+*		- Fixed a output bugs using getType() instead of getTypeString().
 *
 ******************************************************************/
 
@@ -131,9 +134,9 @@ public class ShapeNode extends BoundedNode
 			if (geonode.isInstanceNode() == false) {
 				String nodeName = geonode.getName();
 				if (nodeName != null && 0 < nodeName.length())
-					printStream.println(indentString + "\t" + "geometry DEF " + geonode.getName() + " " + geonode.getType() + " {");
+					printStream.println(indentString + "\t" + "geometry DEF " + geonode.getName() + " " + geonode.getTypeString() + " {");
 				else
-					printStream.println(indentString + "\t" + "geometry " + geonode.getType() + " {");
+					printStream.println(indentString + "\t" + "geometry " + geonode.getTypeString() + " {");
 				geonode.outputContext(printStream, indentString + "\t");
 				printStream.println(indentString + "\t" + "}");
 			}
