@@ -1,6 +1,4 @@
-![](./ObjectReplacements/Object 1){width="2.6047in" height="2.75in"}
-
-cybergarage-x3d
+# CyberX3D for Java
 
 User's Guide
 
